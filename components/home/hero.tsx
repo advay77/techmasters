@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-start my-16 gap-10">
           {/* Quote Section */}
           <div className="relative pl-8 md:pl-12">
-            <span className="absolute left-0 top-0 text-6xl font-serif text-blue-500 leading-none">"</span>
+            <span className="absolute left-0 top-0 text-6xl font-serif text-blue-500 leading-none">&quot;</span>
             <p className="font-inter text-lg text-gray-700 max-w-lg">
               Our community consists of passionate developers and motivated young students.
               Now, we are one of the most active GDGs in the MENA region.
@@ -51,8 +51,8 @@ const HeroSection: React.FC = () => {
           <div className="flex items-start gap-4">
             <span className="font-poppins text-7xl md:text-8xl font-black text-gray-900 leading-none">01</span>
             <div className="mt-6">
-              <p className="font-inter text-lg text-gray-700">GDG For Once</p>
-              <p className="font-inter text-lg text-gray-700">GDG For Everrr !</p>
+              <p className="font-inter text-lg text-gray-700">TechMasters For Once</p>
+              <p className="font-inter text-lg text-gray-700">TechMasters For Everrr !</p>
             </div>
           </div>
         </div>
