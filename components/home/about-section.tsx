@@ -38,12 +38,12 @@ export const AboutSection: React.FC = () => {
           <p className="text-[14px] xl:text-[16px] mt-3 leading-6 md:w-[40rem] text-gray-700">
             Tech Masters Algiers is a local community situated at the Higher National School of Computer Science (ESI ex INI), Algiers, Algeria. It is part of a large global developers community: Tech Masters Community which is an inclusive environment where everyone interested in tech is welcome to join. Our community gathers motivated young students and professional developers who share the same interest in Google technologies. It started from the simple status of GTUG (Google Technology User Group) in 2011 to become today one of the most active GDGs in the MENA region. GDG Algiers Chapter hosts various technical events and activities for technology enthusiasts and dedicated developers, aiming to provide knowledge about different tech topics and access to the latest Google technologies.
           </p>
-          <div className="md:flex md:gap-2 mt-6">
+          <div className="md:flex md:gap-2 mt-6 items-center ">
             <div className="flex flex-col justify-center items-center">
               <div className="flex mt-6">
                 <Image className="border-2 border-white rounded-full h-14 w-14" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
-                <Image className="border-2 border-white rounded-full h-14 w-14" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
-                <Image className="border-2 border-white rounded-full h-14 w-14" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
+                <Image className="border-2 border-white rounded-full h-14 w-14 -ml-4" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
+                <Image className="border-2 border-white rounded-full h-14 w-14 -ml-4" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
               </div>
             </div>
             <p className="mt-3 text-lg font-medium text-gray-700">+1k members in the community</p>

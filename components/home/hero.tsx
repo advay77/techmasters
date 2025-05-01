@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
             <span className="absolute left-0 top-0 text-6xl font-serif text-blue-500 leading-none">&quot;</span>
             <p className="font-inter text-lg text-gray-700 max-w-lg">
               Our community consists of passionate developers and motivated young students.
-              Now, we are one of the most active GDGs in the MENA region.
+              Now, we are one of the most active Teechmasters Communitys in the MENA region.
             </p>
           </div>
 
@@ -65,71 +65,66 @@ const HeroSection: React.FC = () => {
           </span>
         </div>
 
-        {/* Community Gallery - Manual layout for custom margins/sizes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 ">
+        {/* Community Gallery - All images with consistent heights */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
           {/* Image 1 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 mt-6 md:mt-0">
-            <div className="relative w-full h-64 md:h-80">
-              <Image
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070"
-                alt="GDG Algiers Community 1"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-            </div>
+          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 mt-6 md:mt-0 h-64 md:h-72">
+            <Image
+              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070"
+              alt="Teechmasters Community Algiers Community 1"
+              className="w-full h-full object-cover"
+              width={400}
+              height={400}
+              style={{ height: '100%' }}
+            />
           </div>
 
           {/* Image 2 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-16">
-            <div className="relative w-full h-64 md:h-80">
-              <Image
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070"
-                alt="GDG Algiers Community 2"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-            </div>
+          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-16 h-64 md:h-72">
+            <Image
+              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070"
+              alt="Teechmasters Community Algiers Community 2"
+              className="w-full h-full object-cover"
+              width={400}
+              height={400}
+              style={{ height: '100%' }}
+            />
           </div>
 
           {/* Image 3 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-32">
-            <div className="relative w-full h-64 md:h-80">
-              <Image
-                src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070"
-                alt="GDG Algiers Community 3"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-            </div>
+          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-32 h-64 md:h-72">
+            <Image
+              src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070"
+              alt="Teechmasters Community Algiers Community 3"
+              className="w-full h-full object-cover"
+              width={400}
+              height={400}
+              style={{ height: '100%' }}
+            />
           </div>
 
           {/* Image 4 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-16">
-            <div className="relative w-full h-64 md:h-80">
-              <Image
-                src="https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?q=80&w=2070"
-                alt="GDG Algiers Community 4"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-            </div>
+          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-16 h-64 md:h-72">
+            <Image
+              src="https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?q=80&w=2070"
+              alt="Teechmasters Community Algiers Community 4"
+              className="w-full h-full object-cover"
+              width={400}
+              height={400}
+              style={{ height: '100%' }}
+            />
           </div>
 
           {/* Image 5 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 mt-6 md:mt-0">
-            <div className="relative w-full h-64 md:h-80">
-              <Image
-                src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070"
-                alt="GDG Algiers Community 5"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-            </div>
+          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 mt-6 md:mt-0 h-64 md:h-72">
+            <Image
+              src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070"
+              alt="Teechmasters Community Algiers Community 5"
+              className="w-full h-full object-cover"
+              width={400}
+              height={400}
+              style={{ height: '100%' }}
+            />
           </div>
         </div>
       </div>

@@ -44,7 +44,7 @@ export const Team = ()=>{
             <button className="rounded-full py-2 px-8 text-white bg-yellow-400">Our Team</button>
         </div>
         <div className="mt-8">
-            <h3 className="text-3xl md:text-7xl font-bold">Team of GDSC Thapar</h3>            
+            <h3 className="text-3xl md:text-7xl font-bold">Team of Techmasters India</h3>            
         </div>
         <div className="mt-6">
             <p className="text-gray-500 text-sm ">This is our impressive team of Techmasters community</p>
