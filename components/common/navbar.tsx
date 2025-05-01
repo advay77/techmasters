@@ -1,0 +1,72 @@
+'use client';
+
+import Image from 'next/image';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  return (
+    <header className="w-full border-b border-gray-100 bg-white px-6 md:px-16 py-4">
+      <div className="flex justify-between items-center">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          {/* <Image src="/logo-placeholder.png" alt="GDG Logo" width={32} height={32} /> */}
+          <span className="text-lg font-semibold">GDG Algiers</span>
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex gap-6 text-sm font-medium text-black">
+          <a href="/" className="hover:underline">Home</a>
+          <a href="/events" className="hover:underline">Events</a>
+          <a href="/teams" className="hover:underline">Teams</a>
+          <a href="/contact-us" className="hover:underline">Contact Us</a>
+        </nav>
+
+        {/* Join Button */}
+        <button className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-md transition">
+          Join
+        </button>
+
+        {/* Mobile Hamburger */}
+        <button className="md:hidden text-black" onClick={toggleMenu}>
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            className="md:hidden fixed inset-0 bg-white z-50 p-6 flex flex-col items-center justify-center space-y-6"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Close Button on Top */}
+            <button
+              className="absolute top-6 right-6 text-black"
+              onClick={toggleMenu}
+            >
+              <X size={32} />
+            </button>
+
+            {/* Menu Items */}
+            <a href="/home" className="block text-lg font-medium text-black hover:underline">Home</a>
+            <a href="/events" className="block text-lg font-medium text-black hover:underline">Events</a>
+            <a href="/teams" className="block text-lg font-medium text-black hover:underline">Teams</a>
+            <a href="/contact us" className="block text-lg font-medium text-black hover:underline">Contact Us</a>
+            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md transition">
+              Join
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
+  );
+}
