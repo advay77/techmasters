@@ -1,6 +1,7 @@
 "use client";
 
 import { Marquee } from "../magicui/marquee";
+import Image from "next/image"; // Import Image from next/image
 
 const items = [
     {
@@ -51,12 +52,12 @@ export const Team = ()=>{
         <div className="mt-10">
             <Marquee  className="[--duration:15s]">
                 {firstRow.map((payload)=>{
-                    return <CarouselCards height={30} width={30} imgUrl={payload.imageUrl} name={payload.name}/>
+                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.imageUrl} name={payload.name}/>
                 })}
             </Marquee>
             <Marquee reverse  className="mt-3 [--duration:15s]">
                 {secondRow.map((payload)=>{
-                    return <CarouselCards height={30} width={30} imgUrl={payload.imageUrl} name={payload.name}/>
+                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.imageUrl} name={payload.name}/>
                 })}
             </Marquee>
         </div>
@@ -66,6 +67,12 @@ export const Team = ()=>{
 
 const CarouselCards = ({imgUrl,name,height,width}:{imgUrl:string,name:string,height:number,width:number})=>{
     return <div>
-        <img className={`h-${height} w-${width} rounded-lg border-2 border-yellow-500`} src={imgUrl} alt={name} />
+        <Image 
+            className={`rounded-lg border-2 border-yellow-500`} 
+            src={imgUrl} 
+            alt={name} 
+            width={width * 10} // Adjusted width for Next.js Image
+            height={height * 10} // Adjusted height for Next.js Image
+        />
     </div>
 }

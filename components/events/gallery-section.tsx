@@ -1,5 +1,6 @@
 'use client';
 import { Marquee } from "../magicui/marquee";
+import Image from "next/image";
 
 const items = [
   {
@@ -42,11 +43,13 @@ export const GallerySection = () => {
         <Marquee className="[--duration:50s]">
           {items.map((payload) => {
             return (
-              <div>
-                <img
+              <div key={payload.name}>
+                <Image
                   className={`md:h-60 md:w-100 h-30 w-60 rounded-[8px] md:rounded-[2px] `}
                   src={payload.imageUrl}
                   alt={payload.name}
+                  width={400} // Adjust width as needed
+                  height={300} // Adjust height as needed
                 />
               </div>
             );
@@ -55,11 +58,13 @@ export const GallerySection = () => {
         <Marquee reverse className="[--duration:50s]">
           {items.map((payload) => {
             return (
-              <div>
-                <img
+              <div key={payload.name}>
+                <Image
                   className={`md:h-60 md:w-100 h-30 w-60 rounded-[8px] md:rounded-[2px] `}
                   src={payload.imageUrl}
                   alt={payload.name}
+                  width={400} // Adjust width as needed
+                  height={300} // Adjust height as needed
                 />
               </div>
             );
@@ -68,11 +73,13 @@ export const GallerySection = () => {
         <Marquee  className="[--duration:50s]">
           {items.map((payload) => {
             return (
-              <div>
-                <img
+              <div key={payload.name}>
+                <Image
                   className={`md:h-60 md:w-100 h-30 w-60 rounded-[8px] md:rounded-[2px] `}
                   src={payload.imageUrl}
                   alt={payload.name}
+                  width={400} // Adjust width as needed
+                  height={300} // Adjust height as needed
                 />
               </div>
             );

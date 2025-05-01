@@ -1,7 +1,8 @@
 'use client';
 
-import Image from 'next/image';
+// import Image from 'next/image';
 import { useState } from 'react';
+import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -20,8 +21,8 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6 text-sm font-medium text-black">
-          <a href="/" className="hover:underline">Home</a>
+        <nav>
+          <Link href="/" className="hover:underline">Home</Link>
           <a href="/events" className="hover:underline">Events</a>
           <a href="/teams" className="hover:underline">Teams</a>
           <a href="/contact-us" className="hover:underline">Contact Us</a>
