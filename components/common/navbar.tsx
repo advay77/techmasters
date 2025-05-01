@@ -16,16 +16,16 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          {/* <Image src="/logo-placeholder.png" alt="GDG Logo" width={32} height={32} /> */}
-          <span className="text-lg font-semibold">GDG Algiers</span>
+          {/* <Image src="/logo-placeholder.png" alt="TMC Logo" width={32} height={32} /> */}
+          <span className="text-lg font-semibold">Techmasters</span>
         </div>
 
         {/* Desktop Navigation */}
-        <nav>
+        <nav className="hidden sm:flex items-center gap-6">
           <Link href="/" className="hover:underline">Home</Link>
-          <a href="/events" className="hover:underline">Events</a>
-          <a href="/teams" className="hover:underline">Teams</a>
-          <a href="/contact-us" className="hover:underline">Contact Us</a>
+          <Link href="/events" className="hover:underline">Events</Link>
+          <Link href="/teams" className="hover:underline">Teams</Link>
+          <Link href="/contact-us" className="hover:underline">Contact Us</Link>
         </nav>
 
         {/* Join Button */}
@@ -58,10 +58,10 @@ export default function Navbar() {
             </button>
 
             {/* Menu Items */}
-            <a href="/home" className="block text-lg font-medium text-black hover:underline">Home</a>
-            <a href="/events" className="block text-lg font-medium text-black hover:underline">Events</a>
-            <a href="/teams" className="block text-lg font-medium text-black hover:underline">Teams</a>
-            <a href="/contact us" className="block text-lg font-medium text-black hover:underline">Contact Us</a>
+            <Link href="/" className="block text-lg font-medium text-black hover:underline">Home</Link>
+            <Link href="/events" className="block text-lg font-medium text-black hover:underline">Events</Link>
+            <Link href="/teams" className="block text-lg font-medium text-black hover:underline">Teams</Link>
+            <Link href="/contact-us" className="block text-lg font-medium text-black hover:underline">Contact Us</Link>
             <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md transition">
               Join
             </button>
