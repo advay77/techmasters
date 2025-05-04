@@ -7,7 +7,7 @@ import EventsGalleryHero from "@/components/events/hero";
 
 const EventsPage = () => {
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <EventsGalleryHero />
             <Bento/>
             <EventCarousel/>

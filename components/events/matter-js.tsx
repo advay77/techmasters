@@ -96,7 +96,7 @@ const PhysicsIcons = () => {
       
       for (let i = 0; i < images.length; i++) {
         // Set consistent size for all icons
-        const size = 70;
+        const size = 75;
         
         // Position icons across the width with some randomness
         const x = 100 + (width - 200) * (i / images.length) + (Math.random() - 0.5) * 40;
