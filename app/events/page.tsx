@@ -9,8 +9,8 @@ const EventsPage = () => {
     return (
         <div>
             <EventsGalleryHero />
-            <EventCarousel/>
             <Bento/>
+            <EventCarousel/>
             <GallerySection />
         </div>
     );
