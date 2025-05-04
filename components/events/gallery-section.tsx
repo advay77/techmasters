@@ -8,7 +8,7 @@ const items = [
     name: "Alpha",
   },
   {
-    imageUrl: "https://drive.google.com/file/d/1QENupHHB3jYn95Y5rfmf4FEBReoZJkkX/view",
+    imageUrl: "https://picsum.photos/seed/bravo/400/300",
     name: "Bravo",
   },
   {
@@ -36,7 +36,7 @@ const items = [
 export const GallerySection = () => {
   return (
     <div className="relative h-screen flex flex-col justify-center items-center">
-        <div className="hidden z-10 md:flex flex-col justify-center items-center text-6xl font-semibold bg-white h-52 mt-2 w-120 rounded-[1px] ">
+        <div className="hidden z-10 md:flex flex-col justify-center items-center text-6xl font-semibold bg-white md:h-64 md:mb-1 lg:h-52 lg:mt-3 w-100 rounded-[1px] ">
             Gallery
         </div>
       <div className="absolute h-full w-full flex flex-col justify-center items-center ">
