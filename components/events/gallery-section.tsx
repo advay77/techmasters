@@ -34,11 +34,11 @@ const items = [
 ];
 
 export const GallerySection = () => {
-  return (
-    <div className="relative h-screen flex flex-col justify-center items-center">
-        <div className="hidden z-10 md:flex flex-col justify-center items-center text-6xl font-semibold bg-white md:h-64 md:mb-1 lg:h-52 lg:mt-3 w-100 rounded-[1px] ">
-            Gallery
-        </div>
+  return (        
+    <div className="relative h-[60vh] sm:h-screen flex flex-col justify-center items-center">
+      <div className="hidden z-10 md:flex flex-col justify-center items-center text-6xl font-semibold bg-white md:h-60 md:w-100 h-30 w-60 rounded-[1px] ">
+        Gallery
+      </div>
       <div className="absolute h-full w-full flex flex-col justify-center items-center ">
         <Marquee className="[--duration:50s]">
           {items.map((payload) => {
@@ -70,7 +70,7 @@ export const GallerySection = () => {
             );
           })}
         </Marquee>
-        <Marquee  className="[--duration:50s]">
+        <Marquee className="[--duration:50s]">
           {items.map((payload) => {
             return (
               <div key={payload.name}>
@@ -80,7 +80,7 @@ export const GallerySection = () => {
                   alt={payload.name}
                   width={400} // Adjust width as needed
                   height={300} // Adjust height as needed
-                />
+                  />
               </div>
             );
           })}

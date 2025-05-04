@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Main Headline */}
-        <h1 className="font-poppins text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-center text-gray-900 leading-tight mb-16">
+        <h1 className="font-poppins text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-center text-gray-900 leading-tighter mb-16 tracking-tighter">
           WE DO COOL THINGS THAT MATTER
         </h1>
 

@@ -1,7 +1,7 @@
 import { Ripple } from "../magicui/ripple"
 
 export const NewsLetterSection = ()=>{
-    return <div className="h-screen flex flex-col justify-center items-center relative">
+    return <div className="h-screen flex flex-col justify-center items-center relative border-y border-gray-200">
         <Ripple className="overflow-hidden"/>
         <div className="py-30 px-30 rounded-[10px] border border-2  bg-white z-10 text-center ">
            <h3 className="text-4xl font-medium  text-blue-500">Stay Updated</h3>
