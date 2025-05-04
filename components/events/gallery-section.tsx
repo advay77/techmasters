@@ -8,7 +8,7 @@ const items = [
     name: "Alpha",
   },
   {
-    imageUrl: "https://picsum.photos/seed/bravo/400/300",
+    imageUrl: "https://drive.google.com/file/d/1QENupHHB3jYn95Y5rfmf4FEBReoZJkkX/view",
     name: "Bravo",
   },
   {

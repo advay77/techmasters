@@ -36,7 +36,12 @@ export const AboutSection: React.FC = () => {
             ABOUT TECHMASTERS
           </h3>
           <p className="text-[14px] xl:text-[16px] mt-3 leading-6 md:w-[40rem] text-gray-700">
-            Tech Masters Algiers is a local community situated at the Higher National School of Computer Science (ESI ex INI), Algiers, Algeria. It is part of a large global developers community: Tech Masters Community which is an inclusive environment where everyone interested in tech is welcome to join. Our community gathers motivated young students and professional developers who share the same interest in Google technologies. It started from the simple status of GTUG (Google Technology User Group) in 2011 to become today one of the most active GDGs in the MENA region. GDG Algiers Chapter hosts various technical events and activities for technology enthusiasts and dedicated developers, aiming to provide knowledge about different tech topics and access to the latest Google technologies.
+          
+TechMasters India is a registered non-profit organization based in the Delhi-Jaipur region, recognized by the Government of India (MSME) and under the Society Registration Act. Our mission is to bridge the gap between the tech industry and students by offering practical learning and innovative experiences.
+
+We empower students with real-world technical skills through workshops, hackathons, and mentorship, helping them stay ahead in the fast-paced tech industry. Our efforts are acknowledged by academic institutions and industry leaders as we continue to foster a community of skilled professionals.
+
+At TechMasters, we believe in nurturing curiosity, promoting entrepreneurship, and equipping students with both technical expertise and soft skills to succeed in today’s digital world.
           </p>
           <div className="md:flex md:gap-2 mt-6 items-center ">
             <div className="flex flex-col justify-center items-center">
