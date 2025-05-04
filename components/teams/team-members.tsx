@@ -1,15 +1,10 @@
-'use-client'
+'use client';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaLinkedinIn } from 'react-icons/fa';
 
-type TeamMember = {
-  name: string;
-  role: string;
-  img: string;
-  linkedin: string;
-};
-
-const team: TeamMember[] = [
+const team = [
   {
     name: 'Jay Parmani',
     role: 'Software Engineer @Apple',
@@ -60,38 +55,50 @@ const team: TeamMember[] = [
   },
 ];
 
-export default function TeamGrid() {
+const TeamGridBento = () => {
   return (
-    <div className="py-10 px-4 sm:px-8 bg-gray-50">
-      <h2 className="text-3xl font-bold text-center mb-10">Our Team</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
-        {team.map((member, idx) => (
+    <div className="py-20 px-4 bg-white text-black">
+      <h2 className="text-4xl font-bold text-center mb-14">Meet the Team</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {team.map((member, i) => (
           <div
-            key={idx}
-            className="w-64 h-80 bg-white shadow-lg rounded-xl p-5 flex flex-col items-center justify-between"
+            key={i}
+            className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col items-center justify-between border border-gray-200 aspect-square group relative"
           >
-            <div className="w-24 h-24 relative rounded-full overflow-hidden">
+            <div className="relative w-full h-2/3 overflow-hidden">
+              {/* Red hover background from bottom */}
+              <div className="absolute inset-0 bg-[#d34141] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-10" />
+
+              {/* Image */}
               <Image
                 src={member.img}
                 alt={member.name}
                 fill
-                className="object-cover"
+                className="object-cover z-0 transition duration-500 ease-in-out group-hover:grayscale-0 grayscale"
               />
+
+              {/* LinkedIn Overlay */}
+              <Link
+                href={member.linkedin}
+                target="_blank"
+                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 z-20"
+              >
+                <div className="bg-white/30 border border-white/60 backdrop-blur-md p-3 rounded-full hover:bg-white/50 transition">
+                  <FaLinkedinIn className="text-black text-xl" />
+                </div>
+              </Link>
             </div>
-            <div className="text-center mt-4">
-              <h3 className="font-semibold text-lg">{member.name}</h3>
-              <p className="text-sm text-gray-600 mt-1">{member.role}</p>
+
+            {/* Text Content */}
+            <div className="text-center p-4 h-1/3 flex flex-col justify-center z-30 relative">
+              <div className="font-semibold text-lg">{member.name}</div>
+              <div className="text-sm">{member.role}</div>
             </div>
-            <Link
-              href={member.linkedin}
-              target="_blank"
-              className="text-blue-600 hover:text-blue-800 mt-2"
-            >
-              LinkedIn
-            </Link>
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
+
+export default TeamGridBento;
