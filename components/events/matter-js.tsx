@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Engine, Render, World, Bodies, Mouse, MouseConstraint, Body, Runner } from 'matter-js';
 
 const PhysicsIcons = () => {
@@ -8,6 +8,8 @@ const PhysicsIcons = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const engineRef = useRef<Matter.Engine | null>(null);
   const runnerRef = useRef<Matter.Runner | null>(null);
+  const renderRef = useRef<Matter.Render | null>(null);
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   // Example icon URLs that should work immediately
   const iconUrls = [
@@ -28,58 +30,34 @@ const PhysicsIcons = () => {
     'https://cdn-icons-png.flaticon.com/512/5968/5968322.png', // Node.js icon
   ];
 
-  // Use useEffect for cleanup to prevent memory leaks
-  useEffect(() => {
-    // Wait for DOM elements to be available
+  // Function to initialize physics engine
+  const initializePhysics = (width: number, height: number) => {
     if (!containerRef.current || !canvasRef.current) return;
-
-    // Function to preload images
-    const preloadImages = () => {
-      return Promise.all(iconUrls.map(url => {
-        return new Promise<HTMLImageElement>((resolve, reject) => {
-          const img = new Image();
-          img.onload = () => resolve(img);
-          img.onerror = () => {
-            console.warn(`Failed to load image: ${url}`);
-            // Create a fallback canvas with a colored circle
-            const canvas = document.createElement('canvas');
-            const size = 60;
-            canvas.width = size;
-            canvas.height = size;
-            const ctx = canvas.getContext('2d');
-            if (ctx) {
-              ctx.fillStyle = ['#4078c0', '#6cc644', '#bd2c00', '#c9510c', '#6e5494'][
-                Math.floor(Math.random() * 5)
-              ];
-              ctx.beginPath();
-              ctx.arc(size/2, size/2, size/2, 0, Math.PI * 2);
-              ctx.fill();
-              
-              // Convert canvas to image
-              const fallbackImg = new Image();
-              fallbackImg.src = canvas.toDataURL();
-              fallbackImg.onload = () => resolve(fallbackImg);
-            } else {
-              reject(new Error('Could not create fallback image'));
-            }
-          };
-          img.src = url;
-        });
-      }));
-    };
+    
+    // Cleanup previous instance if it exists
+    if (runnerRef.current) {
+      Runner.stop(runnerRef.current);
+    }
+    if (renderRef.current) {
+      Render.stop(renderRef.current);
+    }
+    if (engineRef.current) {
+      World.clear(engineRef.current.world, false);
+      Engine.clear(engineRef.current);
+    }
 
     // Initialize the physics engine with lower precision to improve performance
     const engine = Engine.create({
       positionIterations: 3,
       velocityIterations: 2,
-      gravity: { x: 0, y: 0.2 }, // Gentle gravity
-      timing: { timeScale: 0.9 }
+      gravity: { x: 0, y: 0.5 }, // Increased gravity for faster falling
+      timing: { timeScale: 1.0 } // Normal time scale
     });
     engineRef.current = engine;
 
-    // Create a simple scene
-    const width = containerRef.current.clientWidth;
-    const height = containerRef.current.clientHeight; // Fixed height for better control
+    // Set canvas dimensions
+    canvasRef.current.width = width;
+    canvasRef.current.height = height;
 
     // Create renderer with minimal options for better performance
     const render = Render.create({
@@ -89,10 +67,11 @@ const PhysicsIcons = () => {
         width: width,
         height: height,
         wireframes: false,
-        background: '#f8f9fa',
+        background: 'transparent', // Changed to transparent to show parent background
         pixelRatio: 1,
       }
     });
+    renderRef.current = render;
 
     // Container walls (invisible)
     const wallOptions = { 
@@ -116,7 +95,8 @@ const PhysicsIcons = () => {
       const iconBodies = [];
       
       for (let i = 0; i < images.length; i++) {
-        const size = 40 + Math.random() * 20;
+        // Set consistent size for all icons
+        const size = 70;
         
         // Position icons across the width with some randomness
         const x = 100 + (width - 200) * (i / images.length) + (Math.random() - 0.5) * 40;
@@ -127,9 +107,9 @@ const PhysicsIcons = () => {
         const scale = size / imgSize;
         
         const body = Bodies.circle(x, y, size / 2, {
-          restitution: 0.6,
+          restitution: 0.7, // Higher restitution for more bounce
           friction: 0.01,
-          frictionAir: 0.02,
+          frictionAir: 0.005, // Reduced air friction to make icons fall faster
           render: {
             sprite: {
               texture: images[i].src,
@@ -144,11 +124,11 @@ const PhysicsIcons = () => {
       
       World.add(engine.world, iconBodies);
       
-      // Apply initial forces
+      // Apply stronger initial forces
       iconBodies.forEach(body => {
         Body.setVelocity(body, {
-          x: (Math.random() - 0.5) * 2,
-          y: Math.random() * -2
+          x: (Math.random() - 0.5) * 3,  // Stronger horizontal force
+          y: Math.random() * -3          // Stronger initial upward force
         });
       });
     }).catch(error => {
@@ -178,44 +158,102 @@ const PhysicsIcons = () => {
     
     // Run the renderer
     Render.run(render);
+  };
 
-    // Cleanup function
+  // Function to preload images
+  const preloadImages = () => {
+    return Promise.all(iconUrls.map(url => {
+      return new Promise<HTMLImageElement>((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = () => {
+          console.warn(`Failed to load image: ${url}`);
+          // Create a fallback canvas with a colored circle
+          const canvas = document.createElement('canvas');
+          const size = 60;
+          canvas.width = size;
+          canvas.height = size;
+          const ctx = canvas.getContext('2d');
+          if (ctx) {
+            ctx.fillStyle = ['#4078c0', '#6cc644', '#bd2c00', '#c9510c', '#6e5494'][
+              Math.floor(Math.random() * 5)
+            ];
+            ctx.beginPath();
+            ctx.arc(size/2, size/2, size/2, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Convert canvas to image
+            const fallbackImg = new Image();
+            fallbackImg.src = canvas.toDataURL();
+            fallbackImg.onload = () => resolve(fallbackImg);
+          } else {
+            reject(new Error('Could not create fallback image'));
+          }
+        };
+        img.src = url;
+      });
+    }));
+  };
+
+  // Handle resize events
+  useEffect(() => {
+    const updateDimensions = () => {
+      if (containerRef.current) {
+        const { width, height } = containerRef.current.getBoundingClientRect();
+        setDimensions({ width, height });
+      }
+    };
+
+    // Initial size calculation
+    updateDimensions();
+
+    // Set up resize observer to detect parent container size changes
+    const resizeObserver = new ResizeObserver(updateDimensions);
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current);
+    }
+
+    // Cleanup
     return () => {
+      resizeObserver.disconnect();
       if (runnerRef.current) {
         Runner.stop(runnerRef.current);
       }
-      Render.stop(render);
+      if (renderRef.current) {
+        Render.stop(renderRef.current);
+      }
       if (engineRef.current) {
         World.clear(engineRef.current.world, false);
         Engine.clear(engineRef.current);
       }
-      if (canvasRef.current) {
-        canvasRef.current.remove();
-      }
     };
   }, []);
 
+  // Initialize or reinitialize physics when dimensions change
+  useEffect(() => {
+    if (dimensions.width > 0 && dimensions.height > 0) {
+      initializePhysics(dimensions.width, dimensions.height);
+    }
+  }, [dimensions]);
+
   return (
-    <div className="flex justify-center items-center my-6">
-      <div 
-        ref={containerRef}
-        style={{ 
-          width: '100%',
-          maxWidth: '100%',
-          height: '100%',
-          overflow: 'hidden',
-          borderRadius: '8px',
-          border: '1px solid #e0e0e0',
-        }}
-      >
-        <canvas 
+    <div ref={containerRef} style={{ 
+      width: '100%', 
+      height: '100%',
+      position: 'relative',
+      overflow: 'hidden'
+    }}>
+      <canvas 
         ref={canvasRef}
         style={{
+          display: 'block',
+          position: 'absolute',
+          top: 0,
+          left: 0,
           width: '100%',
           height: '100%'
         }}
       />    
-      </div>
     </div>
   );
 };

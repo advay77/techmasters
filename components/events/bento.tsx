@@ -85,14 +85,7 @@ export const Bento = () => {
           <h3 className="text-white text-5xl font-bold">03</h3>
         </div>
 
-        {/* <Image
-          className="flex flex-col justify-center rounded-[14px] bg-red-500"
-          src="https://www.shutterstock.com/image-photo/cheerful-young-adult-male-holds-260nw-2440265253.jpg"
-          alt="nothing"
-          width={528}
-          height={176}
-        /> */}
-        <div className="flex flex-col justify-center rounded-[14px] bg-red-500 h-60 w-120"
+        <div className="flex flex-col justify-center rounded-[14px] bg-red-500 h-60 w-130"
         >
           <PhysicsIcons />
         </div>
