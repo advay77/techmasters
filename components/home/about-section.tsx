@@ -18,7 +18,7 @@ const inter = Inter({
 
 export const AboutSection: React.FC = () => {
   return (
-    <div className={`flex flex-col justify-between items-center md:grid md:grid-cols-10 h-screen w-full ${poppins.variable} ${inter.variable}`}>
+    <div className={`flex flex-col justify-between items-center md:grid md:grid-cols-10 h-screen w-full overflow-hidden ${poppins.variable} ${inter.variable}`}>
       <div className="p-2 md:col-span-5 flex flex-col items-center justify-center md:gap-4 gap-2">
         <div className="flex gap-2 md:gap-4">
           <Image className="w-40 h-44 md:w-60 md:h-64 rounded-[20px]" src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2015October/img_20151013_120824_101315034639.jpg" alt="Android Logo" width={240} height={256} />
@@ -36,6 +36,8 @@ export const AboutSection: React.FC = () => {
             ABOUT TECHMASTERS
           </h3>
           <p className="text-[14px] xl:text-[16px] mt-3 leading-6 md:w-[40rem] text-gray-700">
+          
+          TechMasters India is a registered non-profit based in the Delhi-Jaipur region, recognized by the Government of India (MIME) under the Society Registration Act. Our mission is to bridge the gap between students and the tech industry by offering hands-on learning through workshops, hackathons, and mentorship. We empower students with real-world technical skills, keeping them ahead in the fast-paced tech world. Our work is supported by leading academic institutions.
           
 TechMasters India is a registered non-profit organization based in the Delhi-Jaipur region, recognized by the Government of India (MSME) and under the Society Registration Act. Our mission is to bridge the gap between the tech industry and students by offering practical learning and innovative experiences.
 
