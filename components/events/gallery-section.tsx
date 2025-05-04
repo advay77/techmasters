@@ -36,7 +36,7 @@ const items = [
 export const GallerySection = () => {
   return (
     <div className="relative h-screen flex flex-col justify-center items-center">
-        <div className="hidden z-10 md:flex flex-col justify-center items-center text-6xl font-semibold bg-white h-58 mt-1 w-120 rounded-[1px] ">
+        <div className="hidden z-10 md:flex flex-col justify-center items-center text-6xl font-semibold bg-white h-52 mt-2 w-120 rounded-[1px] ">
             Gallery
         </div>
       <div className="absolute h-full w-full flex flex-col justify-center items-center ">

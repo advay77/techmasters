@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,16 +17,16 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          {/* <Image src="/logo-placeholder.png" alt="TMC Logo" width={32} height={32} /> */}
-          <span className="text-lg font-semibold">Techmasters</span>
+          <Image src="https://res.cloudinary.com/dlauialhp/image/upload/v1746354167/tech_master_india2_xilhey.png" alt="TMC Logo" width={152} height={32} />
+          {/* <span className="text-lg font-semibold">Techmasters</span> */}
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden sm:flex items-center gap-6">
-          <Link href="/" className="hover:underline">Home</Link>
-          <Link href="/events" className="hover:underline">Events</Link>
-          <Link href="/teams" className="hover:underline">Teams</Link>
-          <Link href="/contact-us" className="hover:underline">Contact Us</Link>
+          <Link href="/" className="font-medium text-gray-500 hover:text-black transition-colors duration-400 ease-in-out">Home</Link>
+          <Link href="/events" className="font-medium text-gray-500 hover:text-black transition-colors duration-400 ease-in-out">Events</Link>
+          <Link href="/teams" className="font-medium text-gray-500 hover:text-black transition-colors duration-400 ease-in-out">Teams</Link>
+          <Link href="/contact-us" className="font-medium text-gray-500 hover:text-black transition-colors duration-400 ease-in-out">Contact Us</Link>
         </nav>
 
         {/* Join Button */}
