@@ -38,6 +38,12 @@ export const AboutSection: React.FC = () => {
           <p className="text-[14px] xl:text-[16px] mt-3 leading-6 md:w-[40rem] text-gray-700">
           
           TechMasters India is a registered non-profit based in the Delhi-Jaipur region, recognized by the Government of India (MIME) under the Society Registration Act. Our mission is to bridge the gap between students and the tech industry by offering hands-on learning through workshops, hackathons, and mentorship. We empower students with real-world technical skills, keeping them ahead in the fast-paced tech world. Our work is supported by leading academic institutions.
+          
+TechMasters India is a registered non-profit organization based in the Delhi-Jaipur region, recognized by the Government of India (MSME) and under the Society Registration Act. Our mission is to bridge the gap between the tech industry and students by offering practical learning and innovative experiences.
+
+We empower students with real-world technical skills through workshops, hackathons, and mentorship, helping them stay ahead in the fast-paced tech industry. Our efforts are acknowledged by academic institutions and industry leaders as we continue to foster a community of skilled professionals.
+
+At TechMasters, we believe in nurturing curiosity, promoting entrepreneurship, and equipping students with both technical expertise and soft skills to succeed in today’s digital world.
           </p>
           <div className="md:flex md:gap-2 mt-6 items-center ">
             <div className="flex flex-col justify-center items-center">

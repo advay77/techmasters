@@ -1,22 +1,23 @@
 // components/EventsGalleryHero.tsx
 import React from 'react';
 import Link from 'next/link';
+import { RetroGrid } from "@/components/magicui/retro-grid";
 
-type EventCategory = 'Hackathons' | 'Speaker Interactions' | 'Watch Parties' | 'Workshops';
+type EventCategory = 'Hackathons' | 'Speaker Interactions' | 'Workshops';
 
 const EventsGalleryHero: React.FC = () => {
 
     const categories: EventCategory[] = [
         'Hackathons',
         'Speaker Interactions',
-        'Watch Parties',
         'Workshops'
     ];
 
     return (
-        <section className="w-full py-16 md:py-24 flex flex-col items-center justify-center text-center bg-white relative">
+        <section className="w-full h-[70vh] py-16 md:py-24 flex flex-col items-center justify-center text-center bg-white relative">
+            <RetroGrid />
 
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 z-10">
                 {/* Category Navigation */}
                 <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-4 md:mb-4">
                     {categories.map((category) => (
@@ -30,12 +31,12 @@ const EventsGalleryHero: React.FC = () => {
                 </div>
 
                 {/* Heading */}
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-12">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-12 z-10">
                     Events and Gallery
                 </h1>
 
                 {/* Subscribe Button */}
-                <Link href="/subscribe">
+                <Link href="/subscribe z-10">
                     <button
                         className="inline-flex items-center border-2 border-black rounded-full px-8 py-3 text-base font-medium transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50 bg-black text-white"
                     >
