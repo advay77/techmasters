@@ -1,8 +1,9 @@
 "use client";
 
 import { Marquee } from "../magicui/marquee";
+import Image from "next/image";
 
-const items = [   
+const items = [
   {
     name: 'Aaradhy Gaur',
     role: 'Co-Founder',
@@ -123,46 +124,52 @@ const items = [
     linkedin: 'https://www.linkedin.com/in/sanskar-chaturvedi-4a558024b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
 ];
-  
 
 
-
-export const Team = ()=>{
-    return <div className="py-20 flex flex-col justify-center items-center">
-        <div>
-            <button className="rounded-full py-2 px-8 text-white bg-yellow-400">Our Team</button>
-        </div>
-        <div className="mt-8">
-            <h3 className="text-3xl md:text-7xl font-bold">Team of Techmasters India</h3>            
-        </div>
-        <div className="mt-6">
-            <p className="text-gray-500 text-sm ">This is our impressive team of Techmasters community</p>
-        </div>
-        <div className="mt-10">
-            <Marquee  className="[--duration:15s]">
-                {firstRow.map((payload)=>{
-                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.img} name={payload.name}/>
-                })}
-            </Marquee>
-            <Marquee reverse  className="mt-3 [--duration:15s]">
-                {secondRow.map((payload)=>{
-                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.img} name={payload.name}/>
-                })}
-            </Marquee>
-        </div>
 const firstRow = items.slice(0, items.length / 2);
 const secondRow = items.slice(items.length / 2);
 
-  </div>
-}
+
+export const Team = () => {
+  return (
+    <div className="py-20 flex flex-col justify-center items-center">
+      <div>
+        <button className="rounded-full py-2 px-8 text-white bg-yellow-400">Our Team</button>
+      </div>
+      <div className="mt-8">
+        <h3 className="text-3xl md:text-7xl font-bold">Team of Techmasters India</h3>
+      </div>
+      <div className="mt-6">
+        <p className="text-gray-500 text-sm">This is our impressive team of Techmasters community</p>
+      </div>
+      <div className="mt-10">
+        <Marquee className="[--duration:30s]">
+          {firstRow.map((payload) => {
+            return <CarouselCards key={payload.name} imgUrl={payload.img} name={payload.name} />;
+          })}
+        </Marquee>
+        <Marquee reverse className="mt-3 [--duration:30s]">
+          {secondRow.map((payload) => {
+            return <CarouselCards key={payload.name} imgUrl={payload.img} name={payload.name} />;
+          })}
+        </Marquee>
+      </div>
+    </div>
+  );
+};
 
 
-const CarouselCards = ({ imgUrl, name }: { imgUrl: string, name: string }) => {
-  return <div>
-    <img
-      className={`rounded-lg border-2 border-yellow-500 w-40 h-30 md:w-60 md:h-40`}
-      src={imgUrl}
-      alt={name}
-    />
-  </div>
-}
+const CarouselCards = ({ imgUrl, name }: { imgUrl: string; name: string }) => {
+  return (
+    <div className="w-50 h-50 flex justify-center items-center border-2 border-yellow-500 rounded-lg overflow-hidden">
+      <Image
+        className="rounded-lg"
+        src={imgUrl}
+        alt={`Image of ${name}`}
+        width={240} // Fixed width
+        height={192} // Increased height
+        loading="lazy"
+      />
+    </div>
+  );
+};
