@@ -15,25 +15,25 @@ const LeftSection: React.FC = () => {
     {
       platform: 'Telegram',
       url: 'https://t.me/gdscgroup',
-      icon: '/icons/telegram.svg',
+      icon: 'https://res.cloudinary.com/dlauialhp/image/upload/v1746172369/Telegram_logo.svg_ejzbcb.webp',
       color: '#0088cc'
     },
     {
       platform: 'Twitter',
       url: 'https://twitter.com/gdsc',
-      icon: '/icons/twitter.svg',
+      icon: 'https://res.cloudinary.com/dlauialhp/image/upload/v1746172369/Logo_of_Twitter.svg_jgvsht.png',
       color: '#1DA1F2'
     },
     {
       platform: 'LinkedIn',
       url: 'https://linkedin.com/company/gdsc',
-      icon: '/icons/linkedin.svg',
+      icon: 'https://res.cloudinary.com/dlauialhp/image/upload/v1746172368/linkedin-logo-linkedin-icon-transparent-free-png_yan8xz.webp',
       color: '#0A66C2'
     },
     {
       platform: 'Instagram',
       url: 'https://instagram.com/gdsc',
-      icon: '/icons/instagram.svg',
+      icon: 'https://res.cloudinary.com/dlauialhp/image/upload/v1746172373/Instagram_logo_2022.svg_wxw48p.png',
       color: '#E4405F'
     }
   ];

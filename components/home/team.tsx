@@ -1,7 +1,6 @@
 "use client";
 
 import { Marquee } from "../magicui/marquee";
-import Image from "next/image"; // Import Image from next/image
 
 const items = [
     {
@@ -44,7 +43,7 @@ export const Team = ()=>{
             <button className="rounded-full py-2 px-8 text-white bg-yellow-400">Our Team</button>
         </div>
         <div className="mt-8">
-            <h3 className="text-3xl md:text-7xl font-bold">Team of Techmasters India</h3>            
+            <h3 className="text-3xl md:text-7xl font-bold text-center">Team of Techmasters India</h3>            
         </div>
         <div className="mt-6">
             <p className="text-gray-500 text-sm ">This is our impressive team of Techmasters community</p>
@@ -52,12 +51,12 @@ export const Team = ()=>{
         <div className="mt-10">
             <Marquee  className="[--duration:15s]">
                 {firstRow.map((payload)=>{
-                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.imageUrl} name={payload.name}/>
+                    return <CarouselCards key={payload.name}  imgUrl={payload.imageUrl} name={payload.name}/>
                 })}
             </Marquee>
             <Marquee reverse  className="mt-3 [--duration:15s]">
                 {secondRow.map((payload)=>{
-                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.imageUrl} name={payload.name}/>
+                    return <CarouselCards key={payload.name}  imgUrl={payload.imageUrl} name={payload.name}/>
                 })}
             </Marquee>
         </div>
@@ -65,14 +64,12 @@ export const Team = ()=>{
 }
 
 
-const CarouselCards = ({imgUrl,name,height,width}:{imgUrl:string,name:string,height:number,width:number})=>{
+const CarouselCards = ({imgUrl,name}:{imgUrl:string,name:string})=>{
     return <div>
-        <Image 
-            className={`rounded-lg border-2 border-yellow-500`} 
+        <img 
+            className={`rounded-lg border-2 border-yellow-500 w-40 h-30 md:w-60 md:h-40`} 
             src={imgUrl} 
             alt={name} 
-            width={width * 10} // Adjusted width for Next.js Image
-            height={height * 10} // Adjusted height for Next.js Image
         />
     </div>
 }
