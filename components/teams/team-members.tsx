@@ -111,6 +111,19 @@ const team = [
     img: '/ujjwal.png',
     linkedin: 'https://www.linkedin.com/in/ujjwal-agarwal-67b6a0323',
   },
+  {
+    name: 'Kritika Sharma',
+    role: 'Design Team',
+    img: '/kritika.png',
+    linkedin: 'https://www.linkedin.com/in/kritika-sharma-400b1930a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
+
+  {
+    name: 'Sanskar Chaturvedi',
+    role: 'Design Team',
+    img: '/sanskar.png',
+    linkedin: 'https://www.linkedin.com/in/sanskar-chaturvedi-4a558024b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
 ];
 
 const TeamGridBento = () => {

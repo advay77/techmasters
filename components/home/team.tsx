@@ -4,35 +4,128 @@ import { Marquee } from "../magicui/marquee";
 import Image from "next/image"; // Import Image from next/image
 
 const items = [
-    {
-      imageUrl: "https://picsum.photos/seed/alpha/400/300",
-      name: "Alpha"
-    },
-    {
-      imageUrl: "https://picsum.photos/seed/bravo/400/300",
-      name: "Bravo"
-    },
-    {
-      imageUrl: "https://picsum.photos/seed/charlie/400/300",
-      name: "Charlie"
-    },
-    {
-      imageUrl: "https://picsum.photos/seed/delta/400/300",
-      name: "Delta"
-    },
-    {
-      imageUrl: "https://picsum.photos/seed/echo/400/300",
-      name: "Echo"
-    },
-    {
-      imageUrl: "https://picsum.photos/seed/foxtrot/400/300",
-      name: "Foxtrot"
-    },
-    {
-      imageUrl: "https://picsum.photos/seed/golf/400/300",
-      name: "Golf"
-    },
-  ];
+   
+  {
+    name: 'Aaradhy Gaur',
+    role: 'Co-Founder',
+    img: '/aaradhy.png',
+    linkedin: 'http://www.linkedin.com/in/aaradhygaur',
+  },
+  {
+    name: 'Tanish S.Pareek',
+    role: 'Co-Founder',
+    img: '/tanish.png',
+    linkedin: 'http://www.linkedin.com/in/tanish-sunita-pareek',
+  },
+  {
+    name: 'Aryan Thacker',
+    role: 'Tech-Lead',
+    img: '/aryan bhaiya.png',
+    linkedin: 'https://www.linkedin.com/in/aryan-thacker/',
+  },
+  {
+    name: 'Rashmi Arya',
+    role: 'Social Media Lead',
+    img: '/rashmi.png',
+    linkedin:
+      'https://www.linkedin.com/in/rashmi-arya-369bb1285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+  },
+  {
+    name: 'Deependra Singh',
+    role: 'Content-Lead',
+    img: '/ola.png',
+    linkedin: 'https://www.linkedin.com/in/kur-deependra-singh',
+  },
+  {
+    name: 'Palak Kumari',
+    role: 'Marketing Lead',
+    img: '/palak.png',
+    linkedin:
+      'https://www.linkedin.com/in/palak-kumari-b855a521b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
+  {
+    name: 'Nishtha Bhura',
+    role: 'PR Lead',
+    img: '/nistha.png',
+    linkedin:
+      'https://www.linkedin.com/in/nistha-bhura-67aa54257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
+  {
+    name: 'Shashank Jangid',
+    role: 'Design Lead',
+    img: '/shashank.png',
+    linkedin:
+      'https://www.linkedin.com/in/shashank-jangid?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
+  {
+    name: 'Advay Anand',
+    role: 'Tech-Team',
+    img: '/advay.png',
+    linkedin: 'https://www.linkedin.com/in/advay-anand-a89024277/',
+  },
+  {
+    name: 'Divyansh Goel ',
+    role: 'Tech-Team',
+    img: '/mahak.png',
+    linkedin: 'https://www.linkedin.com/in/divyansh-goel-535522314/',
+  },
+  {
+    name: 'Poorva Gupta',
+    role: 'Tech-Team',
+    img: '/poorva.png',
+    linkedin: 'https://www.linkedin.com/in/poorva-gupta-934a25222/',
+  },
+  {
+    name: 'Vishakha Pathak',
+    role: 'Social-Media Team',
+    img: '/vishakha.png',
+    linkedin: 'https://www.linkedin.com/in/nikhilbakshi',
+  },
+  {
+    name: 'Shubhika Jain',
+    role: 'Social-Media Team',
+    img: '/shubhika.png',
+    linkedin: 'https://www.linkedin.com/in/deepanshi-sharma',
+  },
+  {
+    name: 'Aarna Bhardwaj',
+    role: 'PR and Content-Team',
+    img: '/aarna.png',
+    linkedin: 'https://www.linkedin.com/in/meghaverma',
+  },
+  {
+    name: 'Satyam Singh',
+    role: 'Content-Team',
+    img: '/satyam.png',
+    linkedin: 'http://linkedin.com/in/satyam-singh-108486300',
+  },
+  {
+    name: 'Aditi Singh',
+    role: 'Content-Team',
+    img: '/aditi.png',
+    linkedin: 'https://www.linkedin.com/in/aditi-singh-13686b24a',
+  },
+  {
+    name: 'Ujjwal Singh',
+    role: 'PR and Marketing Team',
+    img: '/ujjwal.png',
+    linkedin: 'https://www.linkedin.com/in/ujjwal-agarwal-67b6a0323',
+  },
+  {
+    name: 'Kritika Sharma',
+    role: 'Design Team',
+    img: '/kritika.png',
+    linkedin: 'https://www.linkedin.com/in/kritika-sharma-400b1930a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
+
+  {
+    name: 'Sanskar Chaturvedi',
+    role: 'Design Team',
+    img: '/sanskar.png',
+    linkedin: 'https://www.linkedin.com/in/sanskar-chaturvedi-4a558024b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
+];
+  
 
   
   const firstRow = items.slice(0, items.length / 2);
@@ -52,12 +145,12 @@ export const Team = ()=>{
         <div className="mt-10">
             <Marquee  className="[--duration:15s]">
                 {firstRow.map((payload)=>{
-                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.imageUrl} name={payload.name}/>
+                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.img} name={payload.name}/>
                 })}
             </Marquee>
             <Marquee reverse  className="mt-3 [--duration:15s]">
                 {secondRow.map((payload)=>{
-                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.imageUrl} name={payload.name}/>
+                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.img} name={payload.name}/>
                 })}
             </Marquee>
         </div>
