@@ -8,7 +8,7 @@ const TeamHeroSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <p className="text-gray-600 mb-2 text-sm md:text-base">About our members</p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-12">
-          Team of GDSC Thapar
+          Team of TechMasters
         </h1>
         <Link href="#team-members">
           <button 
