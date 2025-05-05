@@ -27,8 +27,7 @@ const items = [
     name: 'Rashmi Arya',
     role: 'Social Media Lead',
     img: '/rashmi.png',
-    linkedin:
-      'https://www.linkedin.com/in/rashmi-arya-369bb1285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    linkedin: 'https://www.linkedin.com/in/rashmee-arya-369bb1285/',
   },
   {
     name: 'Deependra Singh',
