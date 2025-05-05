@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Main Headline */}
-        <h1 className="font-poppins text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-center text-gray-900 leading-tight mb-16">
+        <h1 className="font-poppins text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-center text-gray-900 leading-tighter mb-16 tracking-tighter">
           WE DO COOL THINGS THAT MATTER
         </h1>
 
@@ -66,65 +66,67 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Community Gallery - All images with consistent heights */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
-          {/* Image 1 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 mt-6 md:mt-0 h-64 md:h-72">
-            <Image
-              src="/A1.png"
-              alt="Teechmasters Community Algiers Community 1"
-              className="w-full h-full object-cover"
-              width={400}
-              height={400}
-              style={{ height: '100%' }}
-            />
-          </div>
+        <div className='hidden sm:block'>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+            {/* Image 1 */}
+            <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 mt-6 md:mt-0 h-64 md:h-72">
+              <Image
+                src="/A1.png"
+                alt="Teechmasters Community Algiers Community 1"
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+                style={{ height: '100%' }}
+              />
+            </div>
 
-          {/* Image 2 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-16 h-64 md:h-72">
-            <Image
-              src="/A2.png"
-              alt="Teechmasters Community Algiers Community 2"
-              className="w-full h-full object-cover"
-              width={400}
-              height={400}
-              style={{ height: '100%' }}
-            />
-          </div>
+            {/* Image 2 */}
+            <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-16 h-64 md:h-72">
+              <Image
+                src="/A2.png"
+                alt="Teechmasters Community Algiers Community 2"
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+                style={{ height: '100%' }}
+              />
+            </div>
 
-          {/* Image 3 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-32 h-64 md:h-72">
-            <Image
-              src="/A4.png"
-              alt="Teechmasters Community Algiers Community 3"
-              className="w-full h-full object-cover"
-              width={400}
-              height={400}
-              style={{ height: '100%' }}
-            />
-          </div>
+            {/* Image 3 */}
+            <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-32 h-64 md:h-72">
+              <Image
+                src="/A4.png"
+                alt="Teechmasters Community Algiers Community 3"
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+                style={{ height: '100%' }}
+              />
+            </div>
 
-          {/* Image 4 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-16 h-64 md:h-72">
-            <Image
-              src="/A3.png"
-              alt="Teechmasters Community Algiers Community 4"
-              className="w-full h-full object-cover"
-              width={400}
-              height={400}
-              style={{ height: '100%' }}
-            />
-          </div>
+            {/* Image 4 */}
+            <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-16 h-64 md:h-72">
+              <Image
+                src="/A3.png"
+                alt="Teechmasters Community Algiers Community 4"
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+                style={{ height: '100%' }}
+              />
+            </div>
 
-          {/* Image 5 */}
-          <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 mt-6 md:mt-0 h-64 md:h-72">
-            <Image
-              src="/A5.png"
-              alt="Teechmasters Community Algiers Community 5"
-              className="w-full h-full object-cover"
-              width={400}
-              height={400}
-              style={{ height: '100%' }}
-            />
+            {/* Image 5 */}
+            <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 mt-6 md:mt-0 h-64 md:h-72">
+              <Image
+                src="/A5.png"
+                alt="Teechmasters Community Algiers Community 5"
+                className="w-full h-full object-cover"
+                width={400}
+                height={400}
+                style={{ height: '100%' }}
+              />
+            </div>
           </div>
         </div>
       </div>

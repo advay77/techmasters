@@ -1,10 +1,8 @@
 "use client";
 
 import { Marquee } from "../magicui/marquee";
-import Image from "next/image"; // Import Image from next/image
 
-const items = [
-   
+const items = [   
   {
     name: 'Aaradhy Gaur',
     role: 'Co-Founder',
@@ -126,9 +124,7 @@ const items = [
 ];
   
 
-  
-  const firstRow = items.slice(0, items.length / 2);
-  const secondRow = items.slice(items.length / 2);
+
 
 export const Team = ()=>{
     return <div className="py-20 flex flex-col justify-center items-center">
@@ -153,18 +149,19 @@ export const Team = ()=>{
                 })}
             </Marquee>
         </div>
-    </div>
+const firstRow = items.slice(0, items.length / 2);
+const secondRow = items.slice(items.length / 2);
+
+  </div>
 }
 
 
-const CarouselCards = ({imgUrl,name,height,width}:{imgUrl:string,name:string,height:number,width:number})=>{
-    return <div>
-        <Image 
-            className={`rounded-lg border-2 border-yellow-500`} 
-            src={imgUrl} 
-            alt={name} 
-            width={width * 10} // Adjusted width for Next.js Image
-            height={height * 10} // Adjusted height for Next.js Image
-        />
-    </div>
+const CarouselCards = ({ imgUrl, name }: { imgUrl: string, name: string }) => {
+  return <div>
+    <img
+      className={`rounded-lg border-2 border-yellow-500 w-40 h-30 md:w-60 md:h-40`}
+      src={imgUrl}
+      alt={name}
+    />
+  </div>
 }

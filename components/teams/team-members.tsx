@@ -128,8 +128,7 @@ const team = [
 
 const TeamGridBento = () => {
   return (
-    <div className="py-20 px-4 bg-white text-black">
-      <h2 className="text-4xl font-bold text-center mb-14">Meet the Team</h2>
+    <div className="pt-0 pb-20 px-4 bg-white text-black">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {team.map((member, i) => (
           <div
@@ -138,7 +137,7 @@ const TeamGridBento = () => {
           >
             <div className="relative w-full h-2/3 overflow-hidden flex items-center justify-center">
            
-              <div className="absolute inset-0 bg-[#d34141] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
+              <div className="absolute inset-0 bg-[#c69320] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
 
              
               <Image
@@ -146,8 +145,8 @@ const TeamGridBento = () => {
                 alt={member.name}
                 width={200}
                 height={200}
-                className="object-contain z-10 relative transition duration-500 ease-in-out"
-              />
+                className="object-contain z-10 relative transition duration-500 ease-in-out grayscale"
+                />
             </div>
 
             

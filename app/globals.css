@@ -70,7 +70,13 @@
   0%, 100% {
     transform: translate(-50%, -50%) scale(1);}
   50% {
-    transform: translate(-50%, -50%) scale(0.9);}}}
+    transform: translate(-50%, -50%) scale(0.9);}}
+  --animate-grid: grid 15s linear infinite;
+  @keyframes grid {
+  0% {
+    transform: translateY(-50%);}
+  100% {
+    transform: translateY(0);}}}
 
 :root {
   --radius: 0.625rem;
