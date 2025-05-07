@@ -48,9 +48,7 @@ export default function Navbar() {
           <Link href="/teams" className={`font-medium hover:text-black transition-colors duration-400 ease-in-out ${isActive('/teams')}`}>
             Teams
           </Link>
-          <Link href="/contact-us" className={`font-medium hover:text-black transition-colors duration-400 ease-in-out ${isActive('/contact-us')}`}>
-            Contact Us
-          </Link>
+       
         </nav>
 
         {/* Join Button */}
