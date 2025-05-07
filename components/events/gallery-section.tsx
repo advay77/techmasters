@@ -34,97 +34,59 @@ const items = [
   },
 
   {
-    imageUrl: "/C1.png",
-    name: "Image 1",
-  },
-  {
-    imageUrl: "/C2.png",
-    name: "Image 2",
-   
-  },
-  {
-    imageUrl: "/C3.png",
-    name: "Image 3",
-   
-  },
-  {
-    imageUrl: "/C4.png",
-    name: "Image 4",
-  },
-  {
-    imageUrl: "/C5.png",
-    name: "image 5",
-  },
-  {
-    imageUrl: "/C6.png",
-    name: "Image 6",
-  },
-  {
-    imageUrl: "/C7.png",
-    name: "Image 7",
-  },
-
-  {
     imageUrl: "/C8.png",
-    name: "Image 1",
+    name: "Image 8",
   },
   {
     imageUrl: "/C9.png",
-    name: "Image 2",
+    name: "Image 9",
    
   },
   {
     imageUrl: "/C10.png",
-    name: "Image 3",
+    name: "Image 10",
    
   },
   {
     imageUrl: "/C11.png",
-    name: "Image 4",
+    name: "Image 11",
   },
   {
     imageUrl: "/C12.png",
-    name: "image 5",
+    name: "image 12",
   },
   {
     imageUrl: "/C13.png",
-    name: "Image 6",
+    name: "Image 13",
   },
   {
     imageUrl: "/C14.png",
-    name: "Image 7",
+    name: "Image 14",
   },
 
   {
     imageUrl: "/C15.png",
-    name: "Image 1",
+    name: "Image 15",
   },
   {
     imageUrl: "/C16.png",
-    name: "Image 2",
+    name: "Image 16",
    
   },
   {
     imageUrl: "/C17.png",
-    name: "Image 3",
+    name: "Image 17",
    
   },
   {
     imageUrl: "/C18.png",
-    name: "Image 4",
+    name: "Image 18",
   },
   {
     imageUrl: "/C19.png",
-    name: "image 5",
+    name: "image 19",
   },
-  {
-    imageUrl: "/C20.png",
-    name: "Image 6",
-  },
-  {
-    imageUrl: "/C21.png",
-    name: "Image 7",
-  },
+  
 ];
 
 export const GallerySection = () => {

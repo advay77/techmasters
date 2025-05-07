@@ -127,6 +127,8 @@ const items = [
 
 
 export const Team = ()=>{
+  const firstRow = items.slice(0, items.length / 2);
+const secondRow = items.slice(items.length / 2);
     return <div className="py-20 flex flex-col justify-center items-center">
         <div>
             <button className="rounded-full py-2 px-8 text-white bg-yellow-400">Our Team</button>
@@ -149,19 +151,19 @@ export const Team = ()=>{
                 })}
             </Marquee>
         </div>
-const firstRow = items.slice(0, items.length / 2);
-const secondRow = items.slice(items.length / 2);
+
 
   </div>
 }
 
 
-const CarouselCards = ({ imgUrl, name }: { imgUrl: string, name: string }) => {
+const CarouselCards = ({ imgUrl, name, height, width }: { imgUrl: string, name: string, height?: number, width?: number }) => {
   return <div>
     <img
       className={`rounded-lg border-2 border-yellow-500 w-40 h-30 md:w-60 md:h-40`}
       src={imgUrl}
       alt={name}
+      style={{ height: height ? `${height}rem` : undefined, width: width ? `${width}rem` : undefined }}
     />
   </div>
 }
