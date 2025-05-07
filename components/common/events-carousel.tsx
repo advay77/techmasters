@@ -11,9 +11,9 @@ export function EventCarousel() {
 
   return (
     <div className="w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+      <h3 className="text-[26px] smmin:text-[26px] sm:text-[26px] md:text-6xl font-bold text-gray-900 max-w-7xl pl-4 mx-auto max-w-7xl pl-4 mx-auto">
         Upcoming & Past Events
-      </h2>
+      </h3>
       <Carousel items={cards} />
     </div>
   );

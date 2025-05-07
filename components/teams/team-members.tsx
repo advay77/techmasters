@@ -150,14 +150,14 @@ const TeamGridBento = () => {
             </div>
 
             
-            <div className="text-center p-4 h-1/3 flex flex-col justify-center z-30 relative">
-              <div className="font-semibold text-lg flex items-center justify-center gap-2">
+            <div className="text-center p-4 h-1/3 flex flex-col justify-center z-30 relative w-full">
+              <div className="font-semibold text-lg flex items-center justify-between w-full">
                 <span>{member.name}</span>
-                <Link href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                  <FaLinkedinIn className="text-[#0077b5] text-base hover:text-red-600 transition" />
+                <Link href={member.linkedin} target="_blank" rel="noopener noreferrer" className='bg-black rounded-full p-2'>
+                  <FaLinkedinIn className="text-base text-white" />
                 </Link>
               </div>
-              <div className="text-sm">{member.role}</div>
+              <div className="text-sm w-full text-left">{member.role}</div>
             </div>
           </div>
         ))}
