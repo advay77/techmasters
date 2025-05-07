@@ -28,9 +28,9 @@ export const AboutSection: React.FC = () => {
           <div className="flex gap-4 sm:gap-2 mt-6 items-center ">
             <div className="flex flex-col justify-center items-center">
               <div className="flex mt-6">
-                <Image className="border-2 border-white rounded-full h-12 w-12 sm:h-14 sm:w-14" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
-                <Image className="border-2 border-white rounded-full h-12 w-12 sm:h-14 sm:w-14 -ml-2" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
-                <Image className="border-2 border-white rounded-full h-12 w-12 sm:h-14 sm:w-14 -ml-2" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
+                <Image className="border-2 border-white rounded-full h-12 w-12" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
+                <Image className="border-2 border-white rounded-full h-12 w-12 -ml-2" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
+                <Image className="border-2 border-white rounded-full h-12 w-12 -ml-2" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
               </div>
             </div>
             <p className="mt-3 text-sm sm:text-lg font-medium text-gray-700">400+ members in the community</p>
