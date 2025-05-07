@@ -14,7 +14,38 @@ const items = [
   {
     imageUrl: "/C3.png",
     name: "Image 3",
-   
+
+  },
+  {
+    imageUrl: "/C4.png",
+    name: "Image 4",
+  },
+  {
+    imageUrl: "/C5.png",
+    name: "image 5",
+  },
+  {
+    imageUrl: "/C6.png",
+    name: "Image 6",
+  },
+  {
+    imageUrl: "/C7.png",
+    name: "Image 7",
+  },
+
+  {
+    imageUrl: "/C1.png",
+    name: "Image 1",
+  },
+  {
+    imageUrl: "/C2.png",
+    name: "Image 2",
+
+  },
+  {
+    imageUrl: "/C3.png",
+    name: "Image 3",
+
   },
   {
     imageUrl: "/C4.png",
@@ -45,7 +76,6 @@ const items = [
   {
     imageUrl: "/C10.png",
     name: "Image 10",
-   
   },
   {
     imageUrl: "/C11.png",
@@ -63,7 +93,6 @@ const items = [
     imageUrl: "/C14.png",
     name: "Image 14",
   },
-
   {
     imageUrl: "/C15.png",
     name: "Image 15",
@@ -71,12 +100,10 @@ const items = [
   {
     imageUrl: "/C16.png",
     name: "Image 16",
-   
   },
   {
     imageUrl: "/C17.png",
     name: "Image 17",
-   
   },
   {
     imageUrl: "/C18.png",
@@ -90,16 +117,16 @@ const items = [
 ];
 
 export const GallerySection = () => {
-  return (        
+  return (
     <div className="relative h-[60vh] sm:h-screen flex flex-col justify-center items-center">
       <div className="hidden z-10 md:flex flex-col justify-center items-center text-6xl font-semibold bg-white md:h-60 md:w-100 h-30 w-60 rounded-[1px] ">
         Gallery
       </div>
       <div className="absolute h-full w-full flex flex-col justify-center items-center ">
-        <Marquee className="[--duration:50s]">
-          {items.map((payload) => {
+        <Marquee className="[--duration:135s]">
+          {items.map((payload, index) => {
             return (
-              <div key={payload.name}>
+              <div key={index}>
                 <Image
                   className={`object-cover md:h-60 md:w-100 h-30 w-60 rounded-[8px] md:rounded-[2px] `}
                   src={payload.imageUrl}
@@ -111,10 +138,10 @@ export const GallerySection = () => {
             );
           })}
         </Marquee>
-        <Marquee reverse className="[--duration:50s]">
-          {items.map((payload) => {
+        <Marquee reverse className="[--duration:135s]">
+          {items.map((payload, index) => {
             return (
-              <div key={payload.name}>
+              <div key={index}>
                 <Image
                   className={`object-cover md:h-60 md:w-100 h-30 w-60 rounded-[8px] md:rounded-[2px] `}
                   src={payload.imageUrl}
@@ -126,17 +153,17 @@ export const GallerySection = () => {
             );
           })}
         </Marquee>
-        <Marquee className="[--duration:50s]">
-          {items.map((payload) => {
+        <Marquee className="[--duration:135s]">
+          {items.map((payload, index) => {
             return (
-              <div key={payload.name}>
+              <div key={index}>
                 <Image
                   className={`object-cover md:h-60 md:w-100 h-30 w-60 rounded-[8px] md:rounded-[2px] `}
                   src={payload.imageUrl}
                   alt={payload.name}
                   width={400} // Adjust width as needed
                   height={300} // Adjust height as needed
-                  />
+                />
               </div>
             );
           })}

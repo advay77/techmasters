@@ -9,7 +9,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import { Instagram, Linkedin, Twitter } from "lucide-react"
 
 function Footer() {
   // const [isDarkMode, setIsDarkMode] = React.useState(false)

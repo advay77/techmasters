@@ -6,7 +6,7 @@ import { EventCarousel } from "@/components/common/events-carousel";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero/>
       <AboutSection />
       <EventCarousel/>
