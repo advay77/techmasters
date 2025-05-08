@@ -79,7 +79,7 @@ export const Bento = () => {
             </div>
 
             <Image
-              className="rounded-[14px] hidden sm:block"
+              className="rounded-[14px] hidden sm:block object-cover"
               src="/A1.png"
               alt="random"
               width={280}
@@ -96,7 +96,7 @@ export const Bento = () => {
           </div>
 
           <Image
-            className="flex flex-col justify-center rounded-[14px] bg-red-500"
+            className="flex flex-col justify-center rounded-[14px] h-47 object-cover"
             src="/A4.png"
             alt="nothing"
             width={528}

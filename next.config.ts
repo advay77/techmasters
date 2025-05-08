@@ -15,7 +15,8 @@ const nextConfig = {
       'upload.wikimedia.org',
       'encrypted-tbn0.gstatic.com',
       'res.cloudinary.com',
-      'shutterstock.com'
+      'shutterstock.com',
+      'i.ibb.co'
     ],
   },
 };

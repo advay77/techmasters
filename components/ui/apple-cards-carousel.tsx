@@ -222,7 +222,11 @@ export const Card = ({
               </button>
               <motion.p
                 layoutId={layout ? `category-${card.title}` : undefined}
-                className="text-base font-medium text-black dark:text-white"
+                className={`text-sm font-medium rounded-full py-1.5 border ${
+                  card.category.includes("Past")
+                    ? "bg-red-100/50 text-red-700 border-red-500"
+                    : "bg-green-100/50 text-green-700 border-green-500"
+                }`}
               >
                 {card.category}
               </motion.p>
@@ -232,7 +236,7 @@ export const Card = ({
               >
                 {card.title}
               </motion.p>
-              <div className="py-10">{card.content}</div>
+              <div className="py-10">{card.content} 564</div>
             </motion.div>
           </div>
         )}
@@ -244,10 +248,14 @@ export const Card = ({
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
         <div className="relative z-40 p-8">
-          <motion.p
-            layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-left font-sans text-sm font-medium text-white md:text-base"
-          >
+        <motion.p
+                layoutId={layout ? `category-${card.title}` : undefined}
+                className={`text-sm rounded-full w-fit px-2.5 py-0.5 border ${
+                  card.category.includes("Past")
+                    ? "bg-red-100/20 text-red-500 border-red-500"
+                    : "bg-green-100/20 text-green-400 border-green-400"
+                }`}
+              >
             {card.category}
           </motion.p>
           <motion.p
