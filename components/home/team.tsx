@@ -126,6 +126,7 @@ const items = [
   },
 ];
 
+
 export const Team = () => {
   const firstRow = items.slice(0, items.length / 2);
   const secondRow = items.slice(items.length / 2);
