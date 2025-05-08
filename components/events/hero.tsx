@@ -14,7 +14,7 @@ const EventsGalleryHero: React.FC = () => {
     ];
 
     return (
-        <section className="w-full h-[70vh] py-16 md:py-24 flex flex-col items-center justify-center text-center bg-white relative">
+        <section className="w-full h-[55vh] py-16 md:py-24 flex flex-col items-center justify-center text-center bg-white relative">
             <RetroGrid />
 
             <div className="container mx-auto px-4 z-10">

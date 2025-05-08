@@ -2,20 +2,29 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation'; // Import usePathname and useRouter
+import { usePathname, useRouter } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const pathname = usePathname(); // Get the current path
-  const router = useRouter(); // Use router for navigation
+  const pathname = usePathname();
+  const router = useRouter();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  const handleNavigation = (path: string) => {
-    router.push(path); // Navigate to the page
+  const handleScrollToContact = () => {
+    if (pathname === '/') {
+      // Smooth scroll to #contact if already on the home page
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to the home page and scroll to #contact
+      router.push('/#contact');
+    }
     setMenuOpen(false); // Close the menu
   };
 
@@ -23,6 +32,11 @@ export default function Navbar() {
     pathname === path
       ? 'text-black font-bold underline decoration-[#c69320] decoration-2'
       : 'text-gray-500';
+
+  function handleNavigation(path: string): void {
+    router.push(path);
+    setMenuOpen(false); // Close the menu after navigation
+  }
 
   return (
     <header className="w-full border-b border-gray-100 bg-white px-6 md:px-16 py-4">
@@ -48,12 +62,17 @@ export default function Navbar() {
           <Link href="/teams" className={`font-medium hover:text-black transition-colors duration-400 ease-in-out ${isActive('/teams')}`}>
             Teams
           </Link>
-       
+          <button
+            onClick={handleScrollToContact}
+            className="font-medium hover:text-black cursor-pointer duration-400 ease-in-out text-gray-500"
+          >
+            Contact
+          </button>
         </nav>
 
         {/* Join Button */}
-        <button className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-md transition">
-          Join
+        <button className="hidden md:block bg-black hover:bg-gray-800 cursor-pointer text-white text-sm font-medium px-4 py-2 rounded-md transition">
+          Join Community
         </button>
 
         {/* Mobile Hamburger */}
@@ -100,13 +119,13 @@ export default function Navbar() {
               Teams
             </button>
             <button
-              onClick={() => handleNavigation('/contact-us')}
-              className={`block text-lg font-medium hover:underline ${isActive('/contact-us')}`}
+              onClick={handleScrollToContact}
+              className="block text-lg font-medium hover:underline text-gray-500"
             >
-              Contact Us
+              Contact
             </button>
-            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md transition">
-              Join
+            <button className="w-full bg-black text-white py-2 rounded-md transition">
+              Join Community
             </button>
           </motion.div>
         )}

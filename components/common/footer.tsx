@@ -1,128 +1,142 @@
-"use client"
-
-import * as React from "react"
-import { Button } from "@/components/ui/button"
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
-import { Instagram, Linkedin, Twitter } from "lucide-react"
+"use client";
+import * as React from "react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { Instagram, Linkedin, Twitter } from "lucide-react";
 
 function Footer() {
-  // const [isDarkMode, setIsDarkMode] = React.useState(false)
+  const pathname = usePathname();
+  const router = useRouter();
 
-  // React.useEffect(() => {
-  //   if (isDarkMode) {
-  //     document.documentElement.classList.add("dark")
-  //   } else {
-  //     document.documentElement.classList.remove("dark")
-  //   }
-  // }, [isDarkMode])
+  const handleScrollToContact = () => {
+    if (pathname === "/") {
+      // Smooth scroll to #contact if already on the home page
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Navigate to the home page and scroll to #contact
+      router.push("/#contact");
+    }
+  };
 
   return (
     <footer className="relative border-t bg-background text-foreground transition-colors duration-300">
       <div className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+          {/* Logo */}
           <div className="relative">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight">Stay Connected</h2>
-            <p className="mb-6 text-muted-foreground">
-              Join our newsletter for the latest updates and exclusive offers.
-            </p>
-            <p>Tech Masters Community</p>
-            <div className="absolute -right-4 top-0 h-24 w-24 rounded-full bg-primary/10 blur-2xl" />
+            <Image
+              src="https://res.cloudinary.com/dlauialhp/image/upload/v1746354167/tech_master_india2_xilhey.png"
+              alt="TMC Logo"
+              className="h-20 w-auto"
+              width={152}
+              height={32}
+            />
           </div>
+
+          {/* Navigation Links */}
           <div>
             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
             <nav className="space-y-2 text-sm">
-              <a href="#" className="block transition-colors hover:text-primary">
+              <Link
+                href="/"
+                className="block transition-colors hover:text-primary text-gray-500"
+              >
                 Home
-              </a>
-              <a href="#Events" className="block transition-colors hover:text-primary">
-                About Us
-              </a>
-              <a href="#" className="block transition-colors hover:text-primary">
+              </Link>
+              <Link
+                href="/events"
+                className="block transition-colors hover:text-primary text-gray-500"
+              >
+                Events
+              </Link>
+              <Link
+                href="/teams"
+                className="block transition-colors hover:text-primary text-gray-500"
+              >
+                Teams
+              </Link>
+              <button
+                onClick={handleScrollToContact}
+                className="block text-gray-500 transition-colors hover:text-primary"
+              >
                 Contact
-              </a>
+              </button>
             </nav>
           </div>
+
+          {/* Contact Information */}
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
-            <address className="space-y-2 text-sm not-italic">
-              <p>Phone: (+91-) 7597708888</p>
-              <p>Email: techmasterscommunity@gmail.com</p>
-            </address>
+            <p className="block text-gray-500 transition-colors hover:text-primary text-sm"
+            >Phone: +91 7597708888</p>
+            <p className="block text-gray-500 transition-colors hover:text-primary text-sm"
+            >Email: techmasterscommunity@gmail.com</p>
           </div>
+
+          {/* Social Media Links */}
           <div className="relative">
             <h3 className="mb-4 text-lg font-semibold">Follow Us</h3>
             <div className="mb-6 flex space-x-4">
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                   
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <a href="https://x.com/TechMastersOrg" target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" size="icon" className="rounded-full">
-                        <Twitter className="h-4 w-4" />
-                        <span className="sr-only">Twitter</span>
-                      </Button>
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Follow us on Twitter</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <a href="https://www.instagram.com/techmasters.india?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==https://instagram.com/TechMastersOrg" target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" size="icon" className="rounded-full">
-                        <Instagram className="h-4 w-4" />
-                        <span className="sr-only">Instagram</span>
-                      </Button>
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Follow us on Instagram</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <a href="https://www.linkedin.com/company/techmasters-community/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" size="icon" className="rounded-full">
-                        <Linkedin className="h-4 w-4" />
-                        <span className="sr-only">LinkedIn</span>
-                      </Button>
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Connect with us on LinkedIn</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+              <a
+                href="https://x.com/TechMastersOrg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="rounded-full"
+                >
+                  <Twitter className="h-4 w-4" />
+                  <span className="sr-only">Twitter</span>
+                </Button>
+              </a>
+              <a
+                href="https://www.instagram.com/techmasters.india?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==https://instagram.com/TechMastersOrg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="rounded-full"
+                >
+                  <Instagram className="h-4 w-4" />
+                  <span className="sr-only">Instagram</span>
+                </Button>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/techmasters-community/?viewAsMember=true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="rounded-full"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  <span className="sr-only">LinkedIn</span>
+                </Button>
+              </a>
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
+
+        {/* Footer Bottom */}
+        <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t pt-8 text-center md:flex-row">
           <p className="text-sm text-muted-foreground">
             © 2025 Tech Masters India. All rights reserved.
           </p>
-            </div>
+        </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export { Footer }
+export { Footer };
