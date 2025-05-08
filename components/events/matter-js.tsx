@@ -13,21 +13,23 @@ const PhysicsIcons = () => {
 
   // Example icon URLs that should work immediately
   const iconUrls = [
-    'https://cdn-icons-png.flaticon.com/512/25/25231.png', // GitHub icon
-    'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', // JS icon
-    'https://cdn-icons-png.flaticon.com/512/1126/1126012.png', // React icon
-    'https://cdn-icons-png.flaticon.com/512/5968/5968381.png', // TypeScript icon
-    'https://cdn-icons-png.flaticon.com/512/5968/5968322.png', // Node.js icon
-    'https://cdn-icons-png.flaticon.com/512/25/25231.png', // GitHub icon
-    'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', // JS icon
-    'https://cdn-icons-png.flaticon.com/512/1126/1126012.png', // React icon
-    'https://cdn-icons-png.flaticon.com/512/5968/5968381.png', // TypeScript icon
-    'https://cdn-icons-png.flaticon.com/512/5968/5968322.png', // Node.js icon
-    'https://cdn-icons-png.flaticon.com/512/25/25231.png', // GitHub icon
-    'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', // JS icon
-    'https://cdn-icons-png.flaticon.com/512/1126/1126012.png', // React icon
-    'https://cdn-icons-png.flaticon.com/512/5968/5968381.png', // TypeScript icon
-    'https://cdn-icons-png.flaticon.com/512/5968/5968322.png', // Node.js icon
+    'B1.png', 
+    'B2.png', 
+    'B3.png', 
+    'B4.png', 
+    'B5.png', 
+    'B6.png', 
+    'B7.png', 
+    'B8.png', 
+    'B9.png', 
+    'B10.png', 
+    'B11.png', 
+    'B12.png', 
+    'B13.png', 
+    'B14.png', 
+    'B15.png', 
+    'B16.png',
+    'B17.png',
   ];
 
   // Function to initialize physics engine

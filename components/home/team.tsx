@@ -124,33 +124,6 @@ const items = [
   },
 ];
 
-
-export const Team = ()=>{
-  const firstRow = items.slice(0, items.length / 2);
-const secondRow = items.slice(items.length / 2);
-    return <div className="py-20 flex flex-col justify-center items-center">
-        <div>
-            <button className="rounded-full py-2 px-8 text-white bg-yellow-400">Our Team</button>
-        </div>
-        <div className="mt-8">
-            <h3 className="text-3xl md:text-7xl font-bold">Team of Techmasters India</h3>            
-        </div>
-        <div className="mt-6">
-            <p className="text-gray-500 text-sm ">This is our impressive team of Techmasters community</p>
-        </div>
-        <div className="mt-10">
-            <Marquee  className="[--duration:15s]">
-                {firstRow.map((payload)=>{
-                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.img} name={payload.name}/>
-                })}
-            </Marquee>
-            <Marquee reverse  className="mt-3 [--duration:15s]">
-                {secondRow.map((payload)=>{
-                    return <CarouselCards key={payload.name} height={30} width={30} imgUrl={payload.img} name={payload.name}/>
-                })}
-            </Marquee>
-        </div>
-
 const CarouselCards = ({ imgUrl, name }: { imgUrl: string; name: string }) => {
   return (
     <div className="w-50 h-50 flex justify-center items-center border-2 border-yellow-500 rounded-lg overflow-hidden">
@@ -162,6 +135,37 @@ const CarouselCards = ({ imgUrl, name }: { imgUrl: string; name: string }) => {
         height={192} // Increased height
         loading="lazy"
       />
+    </div>
+  );
+};
+
+export const Team = () => {
+  const firstRow = items.slice(0, items.length / 2);
+  const secondRow = items.slice(items.length / 2);
+
+  return (
+    <div className="py-20 flex flex-col justify-center items-center">
+      <div>
+        <button className="rounded-full py-2 px-8 text-white bg-yellow-400">Our Team</button>
+      </div>
+      <div className="mt-8">
+        <h3 className="text-3xl md:text-7xl font-bold">Team of Techmasters India</h3>
+      </div>
+      <div className="mt-6">
+        <p className="text-gray-500 text-sm">This is our impressive team of Techmasters community</p>
+      </div>
+      <div className="mt-10">
+        <Marquee className="[--duration:15s]">
+          {firstRow.map((payload) => (
+            <CarouselCards key={payload.name} imgUrl={payload.img} name={payload.name} />
+          ))}
+        </Marquee>
+        <Marquee reverse className="mt-3 [--duration:15s]">
+          {secondRow.map((payload) => (
+            <CarouselCards key={payload.name} imgUrl={payload.img} name={payload.name} />
+          ))}
+        </Marquee>
+      </div>
     </div>
   );
 };
