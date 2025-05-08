@@ -43,7 +43,7 @@ export const Bento = () => {
                 <Image
                   className="bg-white rounded-full -ml-3"
                   src="/B3.png"
-                  alt="Google Logo"
+                  alt="TechMasters Logo"
                   width={40}
                   height={40}
                 />
