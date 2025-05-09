@@ -7,12 +7,12 @@ export const AboutSection: React.FC = () => {
     <div className={`flex flex-col md:flex-row justify-between items-center w-full sm:gap-16 bg-[#fafafa] py-20`}>
       <div className="p-2 md:flex-1 flex flex-col items-center sm:items-end justify-center md:gap-4 gap-2">
         <div className="flex gap-2 md:gap-4">
-          <Image className="w-40 h-44 md:w-60 md:h-64 rounded-[20px]" src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2015October/img_20151013_120824_101315034639.jpg" alt="Android Logo" width={240} height={256} />
-          <Image className="w-40 h-40 md:w-60 md:h-50 rounded-[20px] md:mt-12 mt-6" src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2015October/img_20151013_120824_101315034639.jpg" alt="Android Logo" width={240} height={200} />
+          <Image className="w-40 h-44 md:w-60 md:h-64 rounded-[20px] object-cover" src="/C9.png" alt="Android Logo" width={240} height={256} />
+          <Image className="w-40 h-40 md:w-60 md:h-50 rounded-[20px] md:mt-12 mt-6 object-cover" src="/C5.png" alt="Android Logo" width={240} height={200} />
         </div>
         <div className="flex gap-2 md:gap-4">
-          <Image className="w-40 h-40 md:w-60 md:h-50 rounded-[20px]" src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2015October/img_20151013_120824_101315034639.jpg" alt="Android Logo" width={240} height={200} />
-          <Image className="w-40 h-44 md:w-60 md:h-64 rounded-[20px]" src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2015October/img_20151013_120824_101315034639.jpg" alt="Android Logo" width={240} height={256} />
+          <Image className="w-40 h-40 md:w-60 md:h-50 rounded-[20px] object-cover" src="/C2.png" alt="Android Logo" width={240} height={200} />
+          <Image className="w-40 h-44 md:w-60 md:h-64 rounded-[20px] object-cover" src="/C4.png" alt="Android Logo" width={240} height={256} />
         </div>
       </div>
 
@@ -28,9 +28,9 @@ export const AboutSection: React.FC = () => {
           <div className="flex gap-4 sm:gap-2 mt-6 items-center ">
             <div className="flex flex-col justify-center items-center">
               <div className="flex mt-6">
-                <Image className="border-2 border-white rounded-full h-12 w-12" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
-                <Image className="border-2 border-white rounded-full h-12 w-12 -ml-2" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
-                <Image className="border-2 border-white rounded-full h-12 w-12 -ml-2" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="" width={56} height={56} />
+                <Image className="border-2 border-white rounded-full h-12 w-12 object-cover bg-yellow-800" src="/rashmi.png" alt="" width={56} height={56} />
+                <Image className="border-2 border-white rounded-full h-12 w-12 -ml-2 object-cover bg-yellow-800" src="/shubhika.png" alt="" width={56} height={56} />
+                <Image className="border-2 border-white rounded-full h-12 w-12 -ml-2 object-cover bg-yellow-800" src="/nistha.png" alt="" width={56} height={56} />
               </div>
             </div>
             <p className="mt-3 text-sm sm:text-lg font-medium text-gray-700">400+ members in the community</p>
