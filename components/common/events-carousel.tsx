@@ -55,13 +55,13 @@ const data = [
   {
     category: "Past Event",
     title: "Code With Bharat Season 1",
-    src: "/abc2.png",
+    src: "/cfb1.png",
     content: <DummyContent />,
   },
   {
     category: "Upcoming",
     title: "Code With Bharat Season 2",
-    src: "/abc3.png",
+    src: "/cfb2.png",
     content: <DummyContent />,
   },
   {

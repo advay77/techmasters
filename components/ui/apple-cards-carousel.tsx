@@ -288,7 +288,7 @@ export const BlurImage = ({
   return (
     <Image
       className={cn(
-        "h-full w-full transition duration-300",
+        "h-full w-full transition duration-300 object-contain",
         isLoading ? "blur-sm" : "blur-0",
         className,
       )}
