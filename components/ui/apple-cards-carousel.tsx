@@ -186,9 +186,10 @@ export const Card = ({
 
   useOutsideClick(containerRef, () => handleClose());
 
-  const handleOpen = () => {
+ /* const handleOpen = () => {
     setOpen(false);
   };
+  */
 
   const handleClose = () => {
     setOpen(false);
