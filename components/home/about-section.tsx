@@ -30,7 +30,7 @@ We empower students with real-world technical skills via hands-on experiences, w
 
 Recognized by academic institutions and industry leaders, we foster a thriving ecosystem, where learning meets innovation.
 
-At Tech Masters, we foster curiosity, entrepreneurship, and holistic development by blending technical training, with essential soft skills, to equip students for success in today's dynamic digital world.
+At Tech Masters, we foster curiosity, entrepreneurship, and holistic development by blending technical training, with essential soft skills, to equip students for success in today&apos;s dynamic digital world.
           </p>
           <div className="flex gap-4 sm:gap-2 mt-6 items-center ">
             <div className="flex flex-col justify-center items-center">
