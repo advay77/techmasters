@@ -19,7 +19,7 @@ export const AboutSection: React.FC = () => {
       <div className="flex flex-col justify-center items-center sm:items-start p-4 w-full h-full md:flex-1">
         <div className="p-4">
           <h3 className="text-[26px] smmin:text-[26px] sm:text-[26px] md:text-6xl font-bold text-gray-900">
-            About Techmasters
+            About Tech Masters
           </h3>
           <p className="text-[14px] xl:text-[16px] mt-3 leading-6 md:w-[40rem] text-gray-700">
 
@@ -33,7 +33,7 @@ export const AboutSection: React.FC = () => {
                 <Image className="border-2 border-white rounded-full h-12 w-12 -ml-2 object-cover bg-yellow-800" src="/nistha.png" alt="" width={56} height={56} />
               </div>
             </div>
-            <p className="mt-3 text-sm sm:text-lg font-medium text-gray-700">400+ members in the community</p>
+            <p className="mt-3 text-sm sm:text-lg font-medium text-gray-700">2000+ members in the community</p>
           </div>
           <div className="flex gap-3 mt-6">
             <button className="hover:cursor-pointer hover:bg-gray-900 py-2 px-8 bg-black text-white rounded-lg">
