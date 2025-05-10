@@ -42,8 +42,8 @@ const HeroSection: React.FC = () => {
           <div className="relative pl-8 md:pl-12">
             <span className="absolute left-0 top-0 text-6xl font-serif text-blue-500 leading-none">&quot;</span>
             <p className="font-inter text-lg text-gray-700 max-w-lg">
-              Our community consists of passionate developers and motivated young students.
-              Now, we are one of the most active Teechmasters Communitys in the MENA region.
+             TechMasters India is a vibrant community of passionate developers and driven students. 
+            
             </p>
           </div>
 

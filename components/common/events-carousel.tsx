@@ -54,27 +54,27 @@ const DummyContent = () => {
 const data = [
   {
     category: "Past Event",
-    title: "Code With Bharat Season 1",
+    title: "Code For Bharat Season 1",
     src: "/cfb1.png",
-    content: <DummyContent />,
+    content: <></>,
   },
   {
     category: "Upcoming",
-    title: "Code With Bharat Season 2",
+    title: "Code For Bharat Season 2",
     src: "/cfb2.png",
-    content: <DummyContent />,
+    content: <></>,
   },
   {
     category: "Upcoming",
     title: "Coming Soon",
     src: "/abc2.png",
-    content: <DummyContent />,
+    content: <></>,
   },
 
   {
     category: "Upcoming",
     title: "Coming Soon",
     src: "/abc3.png",
-    content: <DummyContent />,
+    content: <></>,
   },
 ];

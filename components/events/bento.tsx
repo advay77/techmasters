@@ -10,13 +10,12 @@ export const Bento = () => {
         </div>
         <div className="flex flex-col h-40 px-4">
           <h2 className="text-2xl font-bold text-gray-900 tracking-tight pt-8">
-            Our Sponsorers
+            Our Partners
           </h2>
 
           <p className="text-md text-gray-600 mt-1">
-            These are the companies that have sponsored us in the past. We are
-            grateful for their support and look forward to working with them and some content.
-            Here you can play with them 😉.
+           
+These are the amazing partners we've worked with in the past. We are truly thankful for their support and look forward to continuing our collaboration.😉
           </p>
         </div>
       </div>
@@ -49,33 +48,33 @@ export const Bento = () => {
                 />
               </div>
               <div>
-                <h3 className="text-center text-white text-4xl font-bold">100+</h3>
+                <h3 className="text-center text-white text-4xl font-bold">50+</h3>
                 <p className="text-center text-white text-md font-md mr-4">
-                  Signed in
+                  Partners
                 </p>
               </div>
             </div>
             <div className="mt-3 bg-yellow-400 rounded-[14px] w-54 sm:w-60 h-20 flex flex-col justify-center items-center">
               <div className="flex gap-2">
                 <div>
-                  <h3 className="flex flex-col justify-center text-5xl font-bold">1</h3>
+                  <h3 className="flex flex-col justify-center text-5xl font-bold">1+</h3>
                 </div>
-                <div className="font-bold text-xl w-40">Years of Innovating</div>
+                <div className="font-bold text-xl w-40">Year of Innovating</div>
               </div>
             </div>
           </div>
           <div className="relative flex sm:flex-row gap-4 sm:gap-0 flex-col justify-start sm:justify-end">
             <div className="shadow-md sm:shadow-gray-600 top-20 -right-20 w-40 h-24 bg-red-500 rounded-[14px] block sm:absolute flex flex-col justify-center items-center">
               <h3 className="text-white">Current Members</h3>
-              <h3 className="text-white text-3xl sm:text-5xl font-bold">60</h3>
+              <h3 className="text-white text-3xl sm:text-5xl font-bold">3K+</h3>
             </div>
             <div className="bottom-2 sm:shadow-md shadow-gray-600 -right-20 w-40 h-24 bg-blue-500 rounded-[14px] block sm:absolute flex flex-col justify-center items-center">
               <h3 className="text-white">Events & Workshops</h3>
-              <h3 className="text-white text-3xl sm:text-5xl font-bold">5</h3>
+              <h3 className="text-white text-3xl sm:text-5xl font-bold">10+</h3>
             </div>
             <div className="-top-1 sm:shadow-md shadow-gray-600 -right-20 w-40 h-24 bg-green-500 rounded-[14px] block flex flex-col justify-center items-center block sm:hidden">
-              <h3 className="text-white">SOLCHA Attempts</h3>
-              <h3 className="text-white text-3xl sm:text-5xl font-bold">03</h3>
+              <h3 className="text-white">Industry Mentors</h3>
+              <h3 className="text-white text-3xl sm:text-5xl font-bold">35+</h3>
             </div>
 
             <Image
@@ -90,8 +89,8 @@ export const Bento = () => {
         <div className="hidden sm:block">
           <div className="mt-2 relative">
             <div className="-top-1 shadow-md shadow-gray-600 -right-20 w-40 h-24 bg-green-500 rounded-[14px] absolute flex flex-col justify-center items-center">
-              <h3 className="text-white">SOLCHA Attempts</h3>
-              <h3 className="text-white text-5xl font-bold">03</h3>
+              <h3 className="text-white">Industry Mentors</h3>
+              <h3 className="text-white text-5xl font-bold">35+</h3>
             </div>
           </div>
 
