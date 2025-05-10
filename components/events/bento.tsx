@@ -14,8 +14,8 @@ export const Bento = () => {
           </h2>
 
           <p className="text-md text-gray-600 mt-1">
-           
-These are the amazing partners we've worked with in the past. We are truly thankful for their support and look forward to continuing our collaboration.😉
+
+            These are the amazing partners we&apos;ve worked with in the past. We are truly thankful for their support and look forward to continuing our collaboration.😉
           </p>
         </div>
       </div>
