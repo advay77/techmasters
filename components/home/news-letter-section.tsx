@@ -36,7 +36,7 @@ export default function NewsLetterSection() {
         {/* Social Icons */}
         <div className="flex justify-center gap-8 mt-16">
           <a 
-            href="https://www.linkedin.com/company/techmasters-community/?viewAsMember=true" 
+            href="https://www.linkedin.com/company/techmasters-community/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transform transition-all duration-300 hover:scale-110"
@@ -46,7 +46,7 @@ export default function NewsLetterSection() {
             </div>
           </a>
           <a 
-            href="https://www.instagram.com/techmasters.india" 
+            href="https://www.instagram.com/techmasters.india/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transform transition-all duration-300 hover:scale-110"
@@ -56,7 +56,7 @@ export default function NewsLetterSection() {
             </div>
           </a>
           <a 
-            href="https://x.com/TechMastersOrg" 
+            href="https://x.com/TechMastersorg" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transform transition-all duration-300 hover:scale-110"
@@ -66,7 +66,7 @@ export default function NewsLetterSection() {
             </div>
           </a>
            <a 
-            href="https://x.com/TechMastersOrg" 
+            href="https://chat.whatsapp.com/CF1eoEPRcDt6wzqvlkPbTk" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transform transition-all duration-300 hover:scale-110"

@@ -83,7 +83,7 @@ function Footer() {
             <h3 className="mb-4 text-lg font-semibold">Follow Us</h3>
             <div className="mb-6 flex space-x-4">
               <a
-                href="https://x.com/TechMastersOrg"
+                href="https://x.com/TechMastersorg"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -97,7 +97,7 @@ function Footer() {
                 </Button>
               </a>
               <a
-                href="https://www.instagram.com/techmasters.india?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==https://instagram.com/TechMastersOrg"
+                href="https://www.instagram.com/techmasters.india/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -111,7 +111,7 @@ function Footer() {
                 </Button>
               </a>
               <a
-                href="https://www.linkedin.com/company/techmasters-community/?viewAsMember=true"
+                href="https://www.linkedin.com/company/techmasters-community/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -126,7 +126,7 @@ function Footer() {
               </a>
 
                <a
-                href="https://www.linkedin.com/company/techmasters-community/?viewAsMember=true"
+                href="https://chat.whatsapp.com/CF1eoEPRcDt6wzqvlkPbTk"
                 target="_blank"
                 rel="noopener noreferrer"
               >
