@@ -27,8 +27,7 @@ const team = [
     name: 'Rashmi Arya',
     role: 'Social Media Lead',
     img: '/rashmi.png',
-    linkedin:
-      'https://www.linkedin.com/in/rashmi-arya-369bb1285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    linkedin:'www.linkedin.com/in/rashmee-arya5',
   },
   {
     name: 'Deependra Singh',
@@ -40,23 +39,28 @@ const team = [
     name: 'Palak Kumari',
     role: 'Marketing Lead',
     img: '/palak.png',
-    linkedin:
-      'https://www.linkedin.com/in/palak-kumari-b855a521b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    linkedin:'https://www.linkedin.com/in/palak-kumari-b855a521b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
   {
     name: 'Nishtha Bhura',
     role: 'PR Lead',
     img: '/nistha.png',
-    linkedin:
-      'https://www.linkedin.com/in/nistha-bhura-67aa54257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    linkedin:'https://www.linkedin.com/in/nistha-bhura-67aa54257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
   {
     name: 'Shashank Jangid',
     role: 'Design Lead',
     img: '/shashank.png',
-    linkedin:
-      'https://www.linkedin.com/in/shashank-jangid?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    linkedin:'https://www.linkedin.com/in/shashank-jangid?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
+    
+  {
+    name: 'Dimple Pareek',
+    role: 'Design Lead',
+    img: '/dimple.png',
+    linkedin:'https://www.linkedin.com/in/dimple-pareek-00773b175/',
+  },
+
   {
     name: 'Advay Anand',
     role: 'Tech-Team',

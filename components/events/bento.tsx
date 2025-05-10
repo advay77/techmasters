@@ -58,7 +58,7 @@ export const Bento = () => {
             <div className="mt-3 bg-yellow-400 rounded-[14px] w-54 sm:w-60 h-20 flex flex-col justify-center items-center">
               <div className="flex gap-2">
                 <div>
-                  <h3 className="flex flex-col justify-center text-5xl font-bold">1</h3>
+                  <h3 className="flex flex-col justify-center text-5xl font-bold">1+</h3>
                 </div>
                 <div className="font-bold text-xl w-40">Years of Innovating</div>
               </div>
@@ -79,7 +79,7 @@ export const Bento = () => {
             </div>
 
             <Image
-              className="rounded-[14px] hidden sm:block"
+              className="rounded-[14px] hidden sm:block h-73 object-cover"
               src="/A1.png"
               alt="random"
               width={280}
@@ -96,7 +96,7 @@ export const Bento = () => {
           </div>
 
           <Image
-            className="flex flex-col justify-center rounded-[14px] bg-red-500"
+            className="rounded-[14px] h-48 object-cover"
             src="/A4.png"
             alt="nothing"
             width={528}
