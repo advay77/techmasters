@@ -33,7 +33,7 @@ export const AboutSection: React.FC = () => {
                 <Image className="border-2 border-white rounded-full h-12 w-12 -ml-2 object-cover bg-yellow-800" src="/nistha.png" alt="" width={56} height={56} />
               </div>
             </div>
-            <p className="mt-3 text-sm sm:text-lg font-medium text-gray-700">2000+ members in the community</p>
+            <p className="mt-3 text-sm sm:text-lg font-medium text-gray-700">3000+ members in the community</p>
           </div>
           <div className="flex gap-3 mt-6">
             <button className="hover:cursor-pointer hover:bg-gray-900 py-2 px-8 bg-black text-white rounded-lg">

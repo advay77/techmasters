@@ -28,7 +28,7 @@ const team = [
     role: 'Social Media Lead',
     img: '/rashmi.png',
     linkedin:
-      'https://www.linkedin.com/in/rashmi-arya-369bb1285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+      'https://www.linkedin.com/in/rashmee-arya5/',
   },
   {
     name: 'Deependra Singh',
@@ -36,6 +36,23 @@ const team = [
     img: '/ola.png',
     linkedin: 'https://www.linkedin.com/in/kur-deependra-singh',
   },
+
+   {
+    name: 'Shashank Jangid',
+    role: 'Design Lead',
+    img: '/shashank.png',
+    linkedin:
+      'https://www.linkedin.com/in/shashank-jangid?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
+
+
+ {
+    name: 'Dimple Pareek',
+    role: 'Legal Advisor',
+    img: '/dimple.png',
+    linkedin:'https://www.linkedin.com/in/dimple-pareek-00773b175/',
+  },
+
   {
     name: 'Palak Kumari',
     role: 'Marketing Lead',
@@ -43,6 +60,9 @@ const team = [
     linkedin:
       'https://www.linkedin.com/in/palak-kumari-b855a521b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
+
+
+
   {
     name: 'Nishtha Bhura',
     role: 'PR Lead',
@@ -50,13 +70,8 @@ const team = [
     linkedin:
       'https://www.linkedin.com/in/nistha-bhura-67aa54257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
-  {
-    name: 'Shashank Jangid',
-    role: 'Design Lead',
-    img: '/shashank.png',
-    linkedin:
-      'https://www.linkedin.com/in/shashank-jangid?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-  },
+ 
+
   {
     name: 'Advay Anand',
     role: 'Tech-Team',
@@ -79,19 +94,19 @@ const team = [
     name: 'Vishakha Pathak',
     role: 'Social-Media Team',
     img: '/vishakha.png',
-    linkedin: 'https://www.linkedin.com/in/nikhilbakshi',
+    linkedin: 'https://www.linkedin.com/in/vishakha-pathak',
   },
   {
     name: 'Shubhika Jain',
     role: 'Social-Media Team',
     img: '/shubhika.png',
-    linkedin: 'https://www.linkedin.com/in/deepanshi-sharma',
+    linkedin: 'https://www.linkedin.com/in/shubhika-jain-105',
   },
   {
     name: 'Aarna Bhardwaj',
     role: 'PR and Content-Team',
     img: '/aarna.png',
-    linkedin: 'https://www.linkedin.com/in/meghaverma',
+    linkedin: 'https://in.linkedin.com/in/aarna-bhardwaj-753864218',
   },
   {
     name: 'Satyam Singh',

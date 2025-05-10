@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Instagram, Linkedin, Twitter } from "lucide-react";
+import { FaLinkedin, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   const pathname = usePathname();
@@ -92,7 +92,7 @@ function Footer() {
                   size="icon"
                   className="rounded-full"
                 >
-                  <Twitter className="h-4 w-4" />
+                  <FaTwitter className="h-4 w-4" />
                   <span className="sr-only">Twitter</span>
                 </Button>
               </a>
@@ -106,7 +106,7 @@ function Footer() {
                   size="icon"
                   className="rounded-full"
                 >
-                  <Instagram className="h-4 w-4" />
+                  <FaInstagram className="h-4 w-4" />
                   <span className="sr-only">Instagram</span>
                 </Button>
               </a>
@@ -120,8 +120,23 @@ function Footer() {
                   size="icon"
                   className="rounded-full"
                 >
-                  <Linkedin className="h-4 w-4" />
+                  <FaLinkedin className="h-4 w-4" />
                   <span className="sr-only">LinkedIn</span>
+                </Button>
+              </a>
+
+               <a
+                href="https://www.linkedin.com/company/techmasters-community/?viewAsMember=true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="rounded-full"
+                >
+                  <FaWhatsapp className="h-4 w-4" />
+                  <span className="sr-only">Whatsapp</span>
                 </Button>
               </a>
             </div>

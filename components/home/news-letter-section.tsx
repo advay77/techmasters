@@ -1,6 +1,6 @@
 "use client"
 import { Ripple } from "../magicui/ripple";
-import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
 
 export default function NewsLetterSection() {
@@ -63,6 +63,16 @@ export default function NewsLetterSection() {
           >
             <div className="p-3 rounded-full bg-white border border-gray-200 hover:border-gray-300 shadow-sm">
               <FaTwitter size={24} className="text-black-500" />
+            </div>
+          </a>
+           <a 
+            href="https://x.com/TechMastersOrg" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="transform transition-all duration-300 hover:scale-110"
+          >
+            <div className="p-3 rounded-full bg-white border border-gray-200 hover:border-gray-300 shadow-sm">
+              <FaWhatsapp size={24} className="text-black-500" />
             </div>
           </a>
         </div>
