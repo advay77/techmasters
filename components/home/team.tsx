@@ -135,12 +135,12 @@ export const Team = () => {
     <div className="py-20 flex flex-col justify-center items-center">
       <div className="mt-8">
       <h3 className="text-[26px] smmin:text-[26px] sm:text-[26px] md:text-6xl font-bold text-gray-900 max-w-7xl pl-4 mx-auto">
-      Team of Techmasters India
+      Team of Tech Masters India
         </h3>
       </div>
       <div className="mt-2">
         <p className="text-gray-500 text-lg text-center">
-          This is our impressive team of Techmasters community
+          This is our impressive team of our community
         </p>
       </div>
       <div className="mt-10">
