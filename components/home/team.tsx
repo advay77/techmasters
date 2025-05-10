@@ -29,6 +29,12 @@ const items = [
     linkedin:
       "https://www.linkedin.com/in/rashmee-arya-369bb1285?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeHmclOQBR0uJXsIFNlkrTA%3D%3D",
   },
+   {
+    name: 'Dimple Pareek',
+    role: 'Legal Advisor',
+    img: '/dimple.png',
+    linkedin:'https://www.linkedin.com/in/dimple-pareek-00773b175/',
+  },
   {
     name: "Deependra Singh",
     role: "Content-Lead",
