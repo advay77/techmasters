@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import Image from "next/image"; // Import Image from next/image
+
 
 export function EventCarousel() {
   const cards = data.map((card, index) => (
