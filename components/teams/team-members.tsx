@@ -169,7 +169,7 @@ const TeamGridBento = () => {
               <div className="font-semibold text-lg flex items-center justify-between w-full">
                 <span>{member.name}</span>
                 <Link href={member.linkedin} target="_blank" rel="noopener noreferrer" className='bg-black rounded-full p-2'>
-                  <FaLinkedinIn className="text-base text-white" />
+                  <FaLinkedinIn className="text-base text-white hover:text-[#c69320]" />
                 </Link>
               </div>
               <div className="text-sm w-full text-left">{member.role}</div>

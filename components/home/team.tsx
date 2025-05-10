@@ -167,7 +167,7 @@ export const Team = () => {
 
 const CarouselCards = ({ imgUrl, name }: { imgUrl: string; name: string }) => {
   return (
-    <div className="w-60 h-60 flex justify-center items-center border-4 border-yellow-500 rounded-lg overflow-hidden">
+    <div className="w-60 h-60 flex justify-center items-center border-4 border-[#c69320] rounded-lg overflow-hidden">
       <Image
         className="rounded-lg object-cover"
         src={imgUrl}
