@@ -27,21 +27,21 @@ export const Bento = () => {
               <div className="flex justify-center">
                 <Image
                   className="bg-white rounded-full"
-                  src="/B1.png"
+                  src="/B1.svg"
                   alt="TechMasters Logo"
                   width={40}
                   height={40}
                 />
                 <Image
                   className="bg-white rounded-full -ml-3"
-                  src="/B2.png"
+                  src="/B2.svg"
                   alt="TechMasters Logo"
                   width={40}
                   height={40}
                 />
                 <Image
                   className="bg-white rounded-full -ml-3"
-                  src="/B3.png"
+                  src="/B3.svg"
                   alt="TechMasters Logo"
                   width={40}
                   height={40}

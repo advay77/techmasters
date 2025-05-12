@@ -95,7 +95,7 @@ const HeroSection: React.FC = () => {
             {/* Image 3 */}
             <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-32 h-64 md:h-72">
               <Image
-                src="/C13.png"
+                src="/H1.png"
                 alt="Teechmasters Community Algiers Community 3"
                 className="w-full h-full object-cover"
                 width={400}
@@ -107,7 +107,7 @@ const HeroSection: React.FC = () => {
             {/* Image 4 */}
             <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 md:-mt-16 h-64 md:h-72">
               <Image
-                src="/C16.png"
+                src="/H2.png"
                 alt="Teechmasters Community Algiers Community 4"
                 className="w-full h-full object-cover"
                 width={400}
@@ -119,7 +119,7 @@ const HeroSection: React.FC = () => {
             {/* Image 5 */}
             <div className="rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 mt-6 md:mt-0 h-64 md:h-72">
               <Image
-                src="/C18.png"
+                src="/H3.png"
                 alt="Teechmasters Community Algiers Community 5"
                 className="w-full h-full object-cover"
                 width={400}
