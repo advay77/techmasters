@@ -36,7 +36,7 @@ const EventsGalleryHero: React.FC = () => {
                 </h1>
 
                 {/* Subscribe Button */}
-                <Link href="/subscribe z-10">
+                <Link href="https://chat.whatsapp.com/CF1eoEPRcDt6wzqvlkPbTk" target="_blank">
                     <button
                         className="inline-flex items-center border-2 border-black rounded-full px-8 py-3 text-base font-medium transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50 bg-black text-white"
                     >
