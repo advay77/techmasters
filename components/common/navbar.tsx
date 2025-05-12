@@ -71,9 +71,14 @@ export default function Navbar() {
         </nav>
 
         {/* Join Button */}
-        <button className="hidden md:block bg-black hover:bg-gray-800 cursor-pointer text-white text-sm font-medium px-4 py-2 rounded-md transition">
+        <a
+          href="https://chat.whatsapp.com/CF1eoEPRcDt6wzqvlkPbTk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:block bg-black hover:bg-gray-800 cursor-pointer text-white text-sm font-medium px-4 py-2 rounded-md transition"
+        >
           Join Community
-        </button>
+        </a>
 
         {/* Mobile Hamburger */}
         <button className="md:hidden text-black" onClick={toggleMenu}>
@@ -124,9 +129,14 @@ export default function Navbar() {
             >
               Contact
             </button>
-            <button className="w-full bg-black text-white py-2 rounded-md transition">
+            <a
+              href="https://chat.whatsapp.com/CF1eoEPRcDt6wzqvlkPbTk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-black text-white py-2 rounded-md transition flex items-center justify-center"
+            >
               Join Community
-            </button>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

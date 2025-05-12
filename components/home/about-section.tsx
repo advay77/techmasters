@@ -43,12 +43,20 @@ At Tech Masters, we foster curiosity, entrepreneurship, and holistic development
             <p className="mt-3 text-sm sm:text-lg font-medium text-gray-700">3000+ members in the community</p>
           </div>
           <div className="flex gap-3 mt-6">
-            <button className="hover:cursor-pointer hover:bg-gray-900 py-2 px-8 bg-black text-white rounded-lg">
+            <a
+              href="https://chat.whatsapp.com/CF1eoEPRcDt6wzqvlkPbTk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:cursor-pointer hover:bg-gray-900 py-2 px-8 bg-black text-white rounded-lg flex items-center justify-center"
+            >
               Join Us
-            </button>
-            <button className="hover:cursor-pointer py-2 px-8 border-2 border-black text-black rounded-lg">
+            </a>
+            <a
+              href="/events"
+              className="hover:cursor-pointer py-2 px-8 border-2 border-black text-black rounded-lg flex items-center justify-center"
+            >
               Check more
-            </button>
+            </a>
           </div>
         </div>
       </div>
