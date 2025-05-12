@@ -43,12 +43,14 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Image
+          <Link href="/">
+            <Image
             src="https://res.cloudinary.com/dlauialhp/image/upload/v1746354167/tech_master_india2_xilhey.png"
             alt="TMC Logo"
             width={152}
             height={32}
           />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
