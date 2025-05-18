@@ -7,12 +7,12 @@ export const AboutSection: React.FC = () => {
     <div className={`flex flex-col md:flex-row justify-between items-center w-full sm:gap-16 bg-[#fafafa] py-20`}>
       <div className="p-2 md:flex-1 flex flex-col items-center sm:items-end justify-center md:gap-4 gap-2">
         <div className="flex gap-2 md:gap-4">
-          <Image className="w-40 h-44 md:w-60 md:h-64 rounded-[20px] object-cover" src="/C9.png" alt="Android Logo" width={240} height={256} />
-          <Image className="w-40 h-40 md:w-60 md:h-50 rounded-[20px] md:mt-12 mt-6 object-cover" src="/C5.png" alt="Android Logo" width={240} height={200} />
+          <Image className="w-40 h-44 md:w-60 md:h-64 rounded-[20px] object-cover" src="/T3.jpg" alt="Android Logo" width={240} height={256} />
+          <Image className="w-40 h-40 md:w-60 md:h-50 rounded-[20px] md:mt-12 mt-6 object-cover" src="/T1.jpg" alt="Android Logo" width={240} height={200} />
         </div>
         <div className="flex gap-2 md:gap-4">
-          <Image className="w-40 h-40 md:w-60 md:h-50 rounded-[20px] object-cover" src="/C2.png" alt="Android Logo" width={240} height={200} />
-          <Image className="w-40 h-44 md:w-60 md:h-64 rounded-[20px] object-cover" src="/C4.png" alt="Android Logo" width={240} height={256} />
+          <Image className="w-40 h-40 md:w-60 md:h-50 rounded-[20px] object-cover" src="/T2.jpg" alt="Android Logo" width={240} height={200} />
+          <Image className="w-40 h-44 md:w-60 md:h-64 rounded-[20px] object-cover" src="/T4.jpg" alt="Android Logo" width={240} height={256} />
         </div>
       </div>
 
