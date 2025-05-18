@@ -19,7 +19,7 @@ const team = [
   },
   {
     name: 'Aryan Thacker',
-    role: 'Tech-Lead',
+    role: 'Tech Lead',
     img: '/aryan bhaiya.png',
     linkedin: 'https://www.linkedin.com/in/aryan-thacker/',
   },
@@ -32,7 +32,7 @@ const team = [
   },
   {
     name: 'Deependra Singh',
-    role: 'Content-Lead',
+    role: 'Content Lead',
     img: '/ola.png',
     linkedin: 'https://www.linkedin.com/in/kur-deependra-singh',
   },
@@ -74,31 +74,31 @@ const team = [
 
   {
     name: 'Advay Anand',
-    role: 'Tech-Team',
+    role: 'Tech Team',
     img: '/advay.png',
     linkedin: 'https://www.linkedin.com/in/advay-anand-a89024277/',
   },
   {
     name: 'Divyansh Goel ',
-    role: 'Tech-Team',
+    role: 'Tech Team',
     img: '/mahak.png',
     linkedin: 'https://www.linkedin.com/in/divyansh-goel-535522314/',
   },
   {
     name: 'Poorva Gupta',
-    role: 'Tech-Team',
+    role: 'Tech Team',
     img: '/poorva.png',
     linkedin: 'https://www.linkedin.com/in/poorva-gupta-934a25222/',
   },
   {
     name: 'Vishakha Pathak',
-    role: 'Social-Media Team',
+    role: 'Social Media Team',
     img: '/vishakha.png',
     linkedin: 'https://www.linkedin.com/in/vishakha-pathak',
   },
   {
     name: 'Shubhika Jain',
-    role: 'Social-Media Team',
+    role: 'Social Media Team',
     img: '/shubhika.png',
     linkedin: 'https://www.linkedin.com/in/shubhika-jain-105',
   },
@@ -110,13 +110,13 @@ const team = [
   },
   {
     name: 'Satyam Singh',
-    role: 'Content-Team',
+    role: 'Content Team',
     img: '/satyam.png',
     linkedin: 'http://linkedin.com/in/satyam-singh-108486300',
   },
   {
     name: 'Aditi Singh',
-    role: 'Content-Team',
+    role: 'Content Team',
     img: '/aditi.png',
     linkedin: 'https://www.linkedin.com/in/aditi-singh-13686b24a',
   },
