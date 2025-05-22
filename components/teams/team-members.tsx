@@ -121,7 +121,7 @@ const team = [
     linkedin: 'https://www.linkedin.com/in/aditi-singh-13686b24a',
   },
   {
-    name: 'Ujjwal Singh',
+    name: 'Ujjwal Agarwal',
     role: 'PR and Marketing Team',
     img: '/ujjwal.png',
     linkedin: 'https://www.linkedin.com/in/ujjwal-agarwal-67b6a0323',
