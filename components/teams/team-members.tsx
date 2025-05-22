@@ -64,7 +64,7 @@ const team = [
 
 
   {
-    name: 'Nishtha Bhura',
+    name: 'Nistha Bhura',
     role: 'PR Lead',
     img: '/nistha.png',
     linkedin:
