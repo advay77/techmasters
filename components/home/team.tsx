@@ -49,7 +49,7 @@ const items = [
       "https://www.linkedin.com/in/palak-kumari-b855a521b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Nishtha Bhura",
+    name: "Nistha Bhura",
     role: "PR Lead",
     img: "/nistha.png",
     linkedin:
