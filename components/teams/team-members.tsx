@@ -94,7 +94,7 @@ const team = [
     name: 'Vishakha Pathak',
     role: 'Social Media Team',
     img: '/vishakha.png',
-    linkedin: 'https://www.linkedin.com/in/vishakha-pathak',
+    linkedin: 'https://www.linkedin.com/in/vishakha-pathak-89a7b5276/',
   },
   {
     name: 'Shubhika Jain',
