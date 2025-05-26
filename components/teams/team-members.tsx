@@ -25,7 +25,7 @@ const team = [
   },
   {
     name: 'Rashmi Arya',
-    role: 'Social Media Lead',
+    role: 'Community Manager',
     img: '/rashmi.png',
     linkedin:
       'https://www.linkedin.com/in/rashmee-arya5/',
